@@ -14,31 +14,5 @@ public class Localization : MonoBehaviour
     private void Start()
     {
         CurrentLang = YandexGame.lang;
-        UpdateLanguageButton();
-    }
-
-    private void UpdateLanguageButton()
-    {
-        if (CurrentLang == "en")
-        {
-            enLanguageButton.gameObject.SetActive(true);
-            ruLanguageButton.gameObject.SetActive(false);
-        }
-        else
-        {
-            ruLanguageButton.gameObject.SetActive(true);
-            enLanguageButton.gameObject.SetActive(false);
-        }
-    }
-
-    //on language button click
-    public void ChangeLanguageButton()
-    {
-        if (CurrentLang != YandexGame.lang)
-        {
-            CurrentLang = YandexGame.lang;
-            UpdateLanguageButton();
-            LangChanged = true;
-        }
     }
 }

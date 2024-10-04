@@ -7,9 +7,10 @@ public class TrackList : MonoBehaviour
     public List<AudioClip> AudioTracks;
     public bool TrackChanged { get; set; }
 
-    private void ChangeTrack()
-    {
-        TrackChanged = true;
-    }
+    private int[] trackIndexes;
 
+    private void SetButtonIndexes()
+    {
+
+    }
 }

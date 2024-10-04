@@ -1,4 +1,4 @@
-public enum PlayMode
+public enum AudioSpeed
 {
     Normal = 0,   //x1
     Fast = 1,     //x1.5

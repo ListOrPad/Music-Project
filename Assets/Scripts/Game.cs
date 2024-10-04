@@ -4,7 +4,6 @@ using YG;
 
 public class Game : MonoBehaviour
 {
-    private AudioTrack track;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private ProgressBar progressBar;
     [SerializeField] private BackgroundAnimation BgAnimation;
@@ -19,7 +18,7 @@ public class Game : MonoBehaviour
     {
         if (!audioSource.isPlaying)
         {
-            track.PlayTrack();
+            SoundManager.Instance.PlayTrack();
         }
         if (audioSource.isPlaying)
         {
@@ -44,6 +43,7 @@ public class Game : MonoBehaviour
         // pause if time is out
         if (timer >= idleTime)
         {
+            audioSource.Pause();
             BgAnimation.PauseAnimation();
         }
     }

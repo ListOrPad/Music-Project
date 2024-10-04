@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,6 +6,10 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
     private AudioSource source;
+
+    private AudioClip currentTrack;
+    private TrackList tracks;
+
 
     private void Awake()
     {
@@ -28,23 +33,53 @@ public class SoundManager : MonoBehaviour
         source.PlayOneShot(clip);
     }
 
+    public void PlayTrack()
+    {
+        PlaySound(currentTrack);
+    }
+
+    public void ResumeTrack()
+    {
+        source.Play();
+    }
+    public void PauseTrack()
+    {
+        source.Pause();
+    }
+
     public void ChangeSpeed(int speed)
     {
-        if (speed == (int)PlayMode.Normal || speed == (int)PlayMode.Auto)
+        if (speed == (int)AudioSpeed.Normal || speed == (int)AudioSpeed.Auto)
         {
             source.pitch = 1f;
         }
-        else if (speed == (int)PlayMode.Fast)
+        else if (speed == (int)AudioSpeed.Fast)
         {
             source.pitch = 1.5f;
         }
-        else if (speed == (int)PlayMode.Faster)
+        else if (speed == (int)AudioSpeed.Faster)
         {
             source.pitch = 2f;
         }
-        else if (speed == (int)PlayMode.Fastest)
+        else if (speed == (int)AudioSpeed.Fastest)
         {
             source.pitch = 3f;
         }
+    }
+
+    //should it be in thiws class?
+    public void GetNewTrack(int chosenTrackID)
+    {
+        for (int i = 0; i <= tracks.AudioTracks.Count; i++)
+        {
+            if (chosenTrackID == i)
+            {
+                tracks.TrackChanged = true;
+                currentTrack = tracks.AudioTracks[i];
+                return;
+            }
+        }
+
+        Debug.LogError("Error finding a track");
     }
 }
