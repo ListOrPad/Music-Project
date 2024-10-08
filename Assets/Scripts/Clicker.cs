@@ -1,26 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour
 {
     private GameObject clicker;
-    public GameObject Mask { get; private set; }
-    private Image pic;
+    //pic section
+    [SerializeField] private GameObject clickerPic;
+    public Sprite Pic {get; set; }
 
     private void Start()
     {
-        clicker = GetComponent<GameObject>();
-        Mask = GameObject.Find("ClickerMask");
-        
+        clicker = gameObject;
     }
 
     private void Update()
     {
         if (TrackList.TrackChanged)
         {
-            clicker = GetComponent<GameObject>();
+            clickerPic.GetComponent<Image>().sprite = Pic;
+            clicker = gameObject;
             TrackList.TrackChanged = false;
         }
     }

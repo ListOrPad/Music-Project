@@ -42,12 +42,13 @@ public class TrackList : MonoBehaviour
     /// <summary>
     /// change elements in playmode
     /// </summary>
-    private void ChangeData(Clicker clicker, GameObject trackObject)
+    private void ChangeData(Clicker clicker, GameObject trackObject)   //do I need this clicker param?
     {
+        //get pic from tracklist item
         Transform mask = trackObject.transform.Find("mask");
         Transform picTransform = mask.transform.Find("Pic");
         Image pic = picTransform.GetComponent<Image>();
-        GameObject.Find("ClickerPic").GetComponent<Image>().sprite = pic.sprite;
+        clicker.Pic = pic.sprite; //finally set pic
 
     }
 }
