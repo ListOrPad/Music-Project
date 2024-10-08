@@ -13,6 +13,10 @@ public class Game : MonoBehaviour
 
     [SerializeField] private Button clickButton;
 
+    [SerializeField] private Canvas gameProcessCanvas;
+    [SerializeField] private Canvas tracklistMenuCanvas; //not needed anymore?
+    private TrackList trackList;
+    private Clicker clicker;
 
     public void Click()
     {
@@ -29,11 +33,17 @@ public class Game : MonoBehaviour
         //Twitch();
     }
 
+
+    private void Awake()
+    {
+        trackList = GameObject.Find("TrackList").GetComponent<TrackList>();
+        clicker = GameObject.Find("Click Button").GetComponent<Clicker>();
+    }
     private void Start()
     {
+        trackList.PrepareTracklistButtons(this, clicker);
         clickButton.onClick.AddListener(Click);
         timer = 0f;
-
     }
 
     private void Update()
@@ -45,6 +55,18 @@ public class Game : MonoBehaviour
         {
             audioSource.Pause();
             BgAnimation.PauseAnimation();
+        }
+    }
+
+    public void SwitchCanvas()
+    {
+        if (gameProcessCanvas.transform.GetSiblingIndex() == 1)
+        {
+            gameProcessCanvas.transform.SetSiblingIndex(0);
+        }
+        else
+        {
+            gameProcessCanvas.transform.SetSiblingIndex(1);
         }
     }
 

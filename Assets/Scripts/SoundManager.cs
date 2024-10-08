@@ -7,7 +7,6 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance;
     private AudioSource source;
 
-    private AudioClip currentTrack;
     private TrackList tracks;
 
 
@@ -35,7 +34,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayTrack()
     {
-        PlaySound(currentTrack);
+        PlaySound(tracks.CurrentTrack);
     }
 
     public void ResumeTrack()
@@ -67,19 +66,4 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    //should it be in thiws class?
-    public void GetNewTrack(int chosenTrackID)
-    {
-        for (int i = 0; i <= tracks.AudioTracks.Count; i++)
-        {
-            if (chosenTrackID == i)
-            {
-                tracks.TrackChanged = true;
-                currentTrack = tracks.AudioTracks[i];
-                return;
-            }
-        }
-
-        Debug.LogError("Error finding a track");
-    }
 }
