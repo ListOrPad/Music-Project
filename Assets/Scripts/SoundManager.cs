@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance;
     private AudioSource source;
 
-    private TrackList tracks;
+    [SerializeField] private TrackList tracks;
 
 
     private void Awake()

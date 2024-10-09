@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class TrackList : MonoBehaviour
@@ -30,7 +31,6 @@ public class TrackList : MonoBehaviour
         {
             if (chosenTrackID == i)
             {
-                TrackChanged = true;
                 CurrentTrack = AudioTracks[i];
                 return;
             }
@@ -44,11 +44,16 @@ public class TrackList : MonoBehaviour
     /// </summary>
     private void ChangeData(Clicker clicker, GameObject trackObject)   //do I need this clicker param?
     {
+        TrackChanged = true;
+
         //get pic from tracklist item
         Transform mask = trackObject.transform.Find("mask");
         Transform picTransform = mask.transform.Find("Pic");
         Image pic = picTransform.GetComponent<Image>();
-        clicker.Pic = pic.sprite; //finally set pic
+        clicker.Pic = pic.sprite; //finally set pic\
+        clicker.ClickerPic.GetComponent<Image>().sprite = clicker.Pic;
+        AudioSource source = GameObject.Find("SoundManager").GetComponent<AudioSource>();
+        source.clip = CurrentTrack;
 
     }
 }

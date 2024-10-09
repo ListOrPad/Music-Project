@@ -7,6 +7,7 @@ public class ProgressBar : MonoBehaviour
 
     public void UpdateProgressBar(AudioSource audioSource)
     {
+
         // Calculate the percentage of the played time relative to the total track length
         float progress = audioSource.time / audioSource.clip.length;
         progressBar.value = progress;

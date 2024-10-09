@@ -5,28 +5,27 @@ using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour
 {
-    private GameObject clicker;
     //pic section
-    [SerializeField] private GameObject clickerPic;
+    [field:SerializeField] public GameObject ClickerPic { get; set; }
     public Sprite Pic {get; set; }
-
-    private void Start()
-    {
-        clicker = gameObject;
-    }
-
-    private void Update()
-    {
-        if (TrackList.TrackChanged)
-        {
-            clickerPic.GetComponent<Image>().sprite = Pic;
-            clicker = gameObject;
-            TrackList.TrackChanged = false;
-        }
-    }
     private void Twitch()
     {
         gameObject.transform.localPosition = new Vector2(10, 10);
 
+    }
+
+    public void Click(Game game)
+    {
+        if (!game.AudSource.isPlaying)
+        {
+            SoundManager.Instance.ResumeTrack();
+        }
+        if (game.AudSource.isPlaying)
+        {
+            game.ProgressBar.UpdateProgressBar(game.AudSource);
+            game.BgAnimation.StartAnimation();
+            game.Timer = 0; //reset timer
+        }
+        //Twitch();
     }
 }

@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
+[System.Serializable]
 public class Game : MonoBehaviour
 {
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private ProgressBar progressBar;
-    [SerializeField] private BackgroundAnimation BgAnimation;
+    [field:SerializeField] public AudioSource AudSource { get; set; }
+    [field:SerializeField] public ProgressBar ProgressBar { get; set; }
+    [field:SerializeField] public BackgroundAnimation BgAnimation { get; set; }
 
-    private float timer;
+    public float Timer { get; set; }
     [SerializeField] private float idleTime = 1.5f;   // time before pause
 
     [SerializeField] private Button clickButton;
@@ -18,20 +19,6 @@ public class Game : MonoBehaviour
     private TrackList trackList;
     private Clicker clicker;
 
-    public void Click()
-    {
-        if (!audioSource.isPlaying)
-        {
-            SoundManager.Instance.PlayTrack();
-        }
-        if (audioSource.isPlaying)
-        {
-            progressBar.UpdateProgressBar(audioSource);
-            BgAnimation.StartAnimation();
-            timer = 0; //reset timer
-        }
-        //Twitch();
-    }
 
 
     private void Awake()
@@ -42,18 +29,18 @@ public class Game : MonoBehaviour
     private void Start()
     {
         trackList.PrepareTracklistButtons(this, clicker);
-        clickButton.onClick.AddListener(Click);
-        timer = 0f;
+        clickButton.onClick.AddListener(() => clicker.Click(this));
+        Timer = 0f;
     }
 
     private void Update()
     {
-        timer += Time.deltaTime;
+        Timer += Time.deltaTime;
 
         // pause if time is out
-        if (timer >= idleTime)
+        if (Timer >= idleTime)
         {
-            audioSource.Pause();
+            SoundManager.Instance.PauseTrack();
             BgAnimation.PauseAnimation();
         }
     }
