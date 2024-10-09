@@ -3,13 +3,16 @@ using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
-    [SerializeField] private Slider progressBar;
+    [field: SerializeField] public Slider ProgressSlider { get; set; }
 
+    //should be Updated every milisec
     public void UpdateProgressBar(AudioSource audioSource)
     {
 
         // Calculate the percentage of the played time relative to the total track length
         float progress = audioSource.time / audioSource.clip.length;
-        progressBar.value = progress;
+        ProgressSlider.value = progress;
     }
+
+    
 }

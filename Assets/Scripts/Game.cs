@@ -8,6 +8,9 @@ public class Game : MonoBehaviour
     [field:SerializeField] public AudioSource AudSource { get; set; }
     [field:SerializeField] public ProgressBar ProgressBar { get; set; }
     [field:SerializeField] public BackgroundAnimation BgAnimation { get; set; }
+    [field:SerializeField] public TrackList TrackListGeneral { get; set; }
+    
+
 
     public float Timer { get; set; }
     [SerializeField] private float idleTime = 1.5f;   // time before pause
@@ -16,19 +19,18 @@ public class Game : MonoBehaviour
 
     [SerializeField] private Canvas gameProcessCanvas;
     [SerializeField] private Canvas tracklistMenuCanvas; //not needed anymore?
-    private TrackList trackList;
     private Clicker clicker;
 
 
 
     private void Awake()
     {
-        trackList = GameObject.Find("TrackList").GetComponent<TrackList>();
+        TrackListGeneral = GameObject.Find("TrackList").GetComponent<TrackList>();
         clicker = GameObject.Find("Click Button").GetComponent<Clicker>();
     }
     private void Start()
     {
-        trackList.PrepareTracklistButtons(this, clicker);
+        TrackListGeneral.PrepareTracklistButtons(this, clicker);
         clickButton.onClick.AddListener(() => clicker.Click(this));
         Timer = 0f;
     }

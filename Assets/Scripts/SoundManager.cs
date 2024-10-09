@@ -46,6 +46,13 @@ public class SoundManager : MonoBehaviour
         source.Pause();
     }
 
+    public void ResetProgress(TrackList trackList, ProgressBar progressBar)
+    {
+        progressBar.ProgressSlider.value = 0;
+        source.clip = null;
+        source.clip = trackList.CurrentTrack;
+    }
+
     public void ChangeSpeed(int speed)
     {
         if (speed == (int)AudioSpeed.Normal || speed == (int)AudioSpeed.Auto)
