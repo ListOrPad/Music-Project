@@ -39,6 +39,11 @@ public class Game : MonoBehaviour
     {
         Timer += Time.deltaTime;
 
+        if(AudSource.isPlaying)
+        {
+            ProgressBar.UpdateProgressBar(AudSource);
+        }
+
         // pause if time is out
         if (Timer >= idleTime)
         {

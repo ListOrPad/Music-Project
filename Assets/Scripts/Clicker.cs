@@ -22,7 +22,6 @@ public class Clicker : MonoBehaviour
         }
         if (game.AudSource.isPlaying)
         {
-            game.ProgressBar.UpdateProgressBar(game.AudSource);
             game.BgAnimation.StartAnimation();
             game.Timer = 0; //reset timer
         }

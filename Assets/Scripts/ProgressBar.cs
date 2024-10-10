@@ -13,6 +13,4 @@ public class ProgressBar : MonoBehaviour
         float progress = audioSource.time / audioSource.clip.length;
         ProgressSlider.value = progress;
     }
-
-    
 }
