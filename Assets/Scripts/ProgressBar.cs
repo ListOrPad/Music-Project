@@ -5,7 +5,6 @@ public class ProgressBar : MonoBehaviour
 {
     [field: SerializeField] public Slider ProgressSlider { get; set; }
 
-    //should be Updated every milisec
     public void UpdateProgressBar(AudioSource audioSource)
     {
 

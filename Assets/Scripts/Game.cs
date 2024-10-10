@@ -13,19 +13,19 @@ public class Game : MonoBehaviour
 
 
     public float Timer { get; set; }
-    [SerializeField] private float idleTime = 1.5f;   // time before pause
+    [SerializeField] private float idleTime = 1f;   // time before pause
 
     [SerializeField] private Button clickButton;
 
     [SerializeField] private Canvas gameProcessCanvas;
     [SerializeField] private Canvas tracklistMenuCanvas; //not needed anymore?
+    [field: SerializeField] public Animator Anim { get; set; }
     private Clicker clicker;
 
 
 
     private void Awake()
     {
-        TrackListGeneral = GameObject.Find("TrackList").GetComponent<TrackList>();
         clicker = GameObject.Find("Click Button").GetComponent<Clicker>();
     }
     private void Start()

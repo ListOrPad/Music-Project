@@ -1,17 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Animations;
+using System.Runtime;
 
 public class Clicker : MonoBehaviour
 {
     //pic section
     [field:SerializeField] public GameObject ClickerPic { get; set; }
     public Sprite Pic {get; set; }
-    private void Twitch()
+    private void Twitch(Game game)
     {
-        gameObject.transform.localPosition = new Vector2(10, 10);
-
+        game.Anim.SetTrigger("Click");
+        System.Random random = new System.Random();
+        int randomState = random.Next(1, 3);
+        if(randomState == 1)
+        {
+            game.Anim.Play("TwitchLeft");
+        }
+        else
+        {
+            game.Anim.Play("TwitchRight");
+        }
+        game.Anim.ResetTrigger("Click");
     }
 
     public void Click(Game game)
@@ -22,9 +32,9 @@ public class Clicker : MonoBehaviour
         }
         if (game.AudSource.isPlaying)
         {
+            Twitch(game);
             game.BgAnimation.StartAnimation();
             game.Timer = 0; //reset timer
         }
-        //Twitch();
     }
 }

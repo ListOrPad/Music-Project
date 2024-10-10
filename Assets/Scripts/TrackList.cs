@@ -1,23 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class TrackList : MonoBehaviour
 {
-    public List<AudioClip> AudioTracks;
+    [SerializeField] private List<AudioClip> audioTracks;
+    [SerializeField] private List<GameObject> trackObjects;
     public AudioClip CurrentTrack { get; private set; }
     public static bool TrackChanged { get; set; }
-    public List<GameObject> TrackObjects;
 
     public void PrepareTracklistButtons(Game game, Clicker clicker)
     {
-        for (int i = 0; i <= TrackObjects.Count - 1 ; i++)
+        for (int i = 0; i <= trackObjects.Count - 1 ; i++)
         {
-            GameObject trackObject = TrackObjects[i];
-            //does it work as intended?
+            GameObject trackObject = trackObjects[i];
             Button button = trackObject.GetComponentInChildren<Button>();
 
             button.onClick.AddListener(game.SwitchCanvas);
@@ -27,11 +24,11 @@ public class TrackList : MonoBehaviour
 
     public void SetNewTrack(int chosenTrackID)
     {
-        for (int i = 0; i <= AudioTracks.Count; i++)
+        for (int i = 0; i <= audioTracks.Count; i++)
         {
             if (chosenTrackID == i)
             {
-                CurrentTrack = AudioTracks[i];
+                CurrentTrack = audioTracks[i];
                 return;
             }
         }
