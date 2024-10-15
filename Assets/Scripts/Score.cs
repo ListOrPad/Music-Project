@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Score : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private int score;
+    private int perfectsScore;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private TextMeshProUGUI ScoreText;
+    [SerializeField] private TextMeshProUGUI PerfectsText;
+
+    public void WriteScoreText()
     {
-        
+        ScoreText.text = score.ToString();
+
+        PerfectsText.text = $"{perfectsScore.ToString()}/30";
     }
 }

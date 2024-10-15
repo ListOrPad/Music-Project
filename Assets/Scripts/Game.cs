@@ -10,15 +10,12 @@ public class Game : MonoBehaviour
     [field:SerializeField] public BackgroundAnimation BgAnimation { get; set; }
     [field:SerializeField] public TrackList TrackListGeneral { get; set; }
     
-
-
     public float Timer { get; set; }
     [SerializeField] private float idleTime = 1f;   // time before pause
 
     [SerializeField] private Button clickButton;
 
     [SerializeField] private Canvas gameProcessCanvas;
-    [SerializeField] private Canvas tracklistMenuCanvas; //not needed anymore?
     [field: SerializeField] public Animator Anim { get; set; }
     private Clicker clicker;
 
@@ -50,6 +47,7 @@ public class Game : MonoBehaviour
             SoundManager.Instance.PauseTrack();
             BgAnimation.PauseAnimation();
         }
+
     }
 
     public void SwitchCanvas()
@@ -61,6 +59,17 @@ public class Game : MonoBehaviour
         else
         {
             gameProcessCanvas.transform.SetSiblingIndex(1);
+        }
+    }
+
+    private void BlockPlaying()
+    {
+        if (ProgressBar.ProgressSlider.value == 1)
+        {
+            clicker.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
+            SoundManager.Instance.PauseTrack();
+            BgAnimation.PauseAnimation();
+
         }
     }
 

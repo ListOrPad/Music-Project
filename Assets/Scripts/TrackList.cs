@@ -5,16 +5,17 @@ using UnityEngine.UI;
 
 public class TrackList : MonoBehaviour
 {
+    [SerializeField] private List<Track> trackObjects;
     [SerializeField] private List<AudioClip> audioTracks;
-    [SerializeField] private List<GameObject> trackObjects;
+
     public AudioClip CurrentTrack { get; private set; }
     public static bool TrackChanged { get; set; }
 
     public void PrepareTracklistButtons(Game game, Clicker clicker)
     {
-        for (int i = 0; i <= trackObjects.Count - 1 ; i++)
+        for (int i = 0; i < trackObjects.Count ; i++)   //just i < ...Count, try it
         {
-            GameObject trackObject = trackObjects[i];
+            GameObject trackObject = trackObjects[i].gameObject;
             Button button = trackObject.GetComponentInChildren<Button>();
 
             button.onClick.AddListener(game.SwitchCanvas);
@@ -39,7 +40,7 @@ public class TrackList : MonoBehaviour
     /// <summary>
     /// change elements in playmode
     /// </summary>
-    private void ChangeData(Clicker clicker, GameObject trackObject)   //do I need this clicker param?
+    private void ChangeData(Clicker clicker, GameObject trackObject)
     {
         TrackChanged = true;
 
@@ -47,7 +48,7 @@ public class TrackList : MonoBehaviour
         Transform mask = trackObject.transform.Find("mask");
         Transform picTransform = mask.transform.Find("Pic");
         Image pic = picTransform.GetComponent<Image>();
-        clicker.Pic = pic.sprite; //finally set pic\
+        clicker.Pic = pic.sprite; //finally set pic
         clicker.ClickerPic.GetComponent<Image>().sprite = clicker.Pic;
         //set current track to source clip
         AudioSource source = GameObject.Find("SoundManager").GetComponent<AudioSource>();

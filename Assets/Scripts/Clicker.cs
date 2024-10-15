@@ -1,18 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Animations;
-using System.Runtime;
 
 public class Clicker : MonoBehaviour
 {
+    [field:SerializeField] public Button ClickerButton { get; private set; }
     //pic section
     [field:SerializeField] public GameObject ClickerPic { get; set; }
     public Sprite Pic {get; set; }
+
     private void Twitch(Game game)
     {
         game.Anim.SetTrigger("Click");
         System.Random random = new System.Random();
-        int randomState = random.Next(1, 3);
+        int randomState = random.Next(1, 3); //generates number from 1 to 2
         if(randomState == 1)
         {
             game.Anim.Play("TwitchLeft");
