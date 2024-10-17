@@ -13,22 +13,15 @@ public class Game : MonoBehaviour
     public float Timer { get; set; }
     [SerializeField] private float idleTime = 1f;   // time before pause
 
-    [SerializeField] private Button clickButton;
-
     [SerializeField] private Canvas gameProcessCanvas;
     [field: SerializeField] public Animator Anim { get; set; }
-    private Clicker clicker;
+    [field: SerializeField] public Clicker clicker { get; set; }
+    [SerializeField] private Score scoreObj;
 
-
-
-    private void Awake()
-    {
-        clicker = GameObject.Find("Click Button").GetComponent<Clicker>();
-    }
     private void Start()
     {
         TrackListGeneral.PrepareTracklistButtons(this, clicker);
-        clickButton.onClick.AddListener(() => clicker.Click(this));
+        clicker.ClickerButton.onClick.AddListener(() => clicker.Click(this));
         Timer = 0f;
     }
 
@@ -48,6 +41,24 @@ public class Game : MonoBehaviour
             BgAnimation.PauseAnimation();
         }
 
+        //if Track is completed(progressbar is filled)
+        if (ProgressBar.ProgressSlider.value >= 0.999)
+        {
+            BlockPlaying();
+            if (!Score.ScoreChanged)
+            {
+                scoreObj.AddScore(TrackListGeneral.CurrentTrack);
+                scoreObj.WriteScoreText();
+                Score.ScoreChanged = true;
+            }
+            //what else should happen?
+
+            //PlayConfettiGif();
+            //ResetAdBlock() (if track wasnt completed)???
+
+            //allow voting for mark
+        }
+
     }
 
     public void SwitchCanvas()
@@ -64,14 +75,12 @@ public class Game : MonoBehaviour
 
     private void BlockPlaying()
     {
-        if (ProgressBar.ProgressSlider.value == 1)
-        {
-            clicker.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
-            SoundManager.Instance.PauseTrack();
-            BgAnimation.PauseAnimation();
-
-        }
+        clicker.ClickerButton.onClick.RemoveAllListeners();
+        SoundManager.Instance.PauseTrack();
+        BgAnimation.PauseAnimation();
+        Anim.ResetTrigger("Click"); //pause twitching
     }
+    
 
     #region rewarded ad
     // Subscribe to the ad opening event in OnEnable

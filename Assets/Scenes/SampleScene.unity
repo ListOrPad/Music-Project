@@ -705,6 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &51942024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,6 +1751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &250608933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,6 +2065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &265357532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,6 +2275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &277773876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2891,6 +2895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &347341704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5069,6 +5074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &570170022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,6 +5657,7 @@ MonoBehaviour:
   clickButton: {fileID: 604220524}
   gameProcessCanvas: {fileID: 256169850}
   <Anim>k__BackingField: {fileID: 604220526}
+  scoreObj: {fileID: 0}
 --- !u!1 &604220522
 GameObject:
   m_ObjectHideFlags: 0
@@ -6898,6 +6905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &718999758
 GameObject:
   m_ObjectHideFlags: 0
@@ -7258,6 +7266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &737870876
 GameObject:
   m_ObjectHideFlags: 0
@@ -7976,6 +7985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &837465349
 GameObject:
   m_ObjectHideFlags: 0
@@ -9866,6 +9876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1009868386
 GameObject:
   m_ObjectHideFlags: 0
@@ -10154,6 +10165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1059980925
 GameObject:
   m_ObjectHideFlags: 0
@@ -11454,6 +11466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1199038752
 GameObject:
   m_ObjectHideFlags: 0
@@ -11624,7 +11637,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11646,6 +11659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 8300000, guid: c32f603c32a21434f9e3d3317dcb4343, type: 3}
 --- !u!1 &1203008497
 GameObject:
   m_ObjectHideFlags: 0
@@ -12220,7 +12234,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12250,6 +12264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 8300000, guid: 9ad280996acdf8f49887e394ab860552, type: 3}
 --- !u!1 &1224780334
 GameObject:
   m_ObjectHideFlags: 0
@@ -12457,6 +12472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1269897727
 GameObject:
   m_ObjectHideFlags: 0
@@ -12574,6 +12590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1271990420
 GameObject:
   m_ObjectHideFlags: 0
@@ -12930,6 +12947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1295095078
 GameObject:
   m_ObjectHideFlags: 0
@@ -13047,6 +13065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1301708571
 GameObject:
   m_ObjectHideFlags: 0
@@ -13094,9 +13113,6 @@ MonoBehaviour:
   trackObjects:
   - {fileID: 1201540487}
   - {fileID: 1220221167}
-  audioTracks:
-  - {fileID: 8300000, guid: c9e34e56c00b91e45b2c8f1b0dd56151, type: 3}
-  - {fileID: 8300000, guid: 9ad280996acdf8f49887e394ab860552, type: 3}
 --- !u!1 &1303693494
 GameObject:
   m_ObjectHideFlags: 0
@@ -15153,6 +15169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1458036221
 GameObject:
   m_ObjectHideFlags: 0
@@ -15345,6 +15362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1472220323
 GameObject:
   m_ObjectHideFlags: 0
@@ -16208,6 +16226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1552115382
 GameObject:
   m_ObjectHideFlags: 0
@@ -16400,6 +16419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1577310401
 GameObject:
   m_ObjectHideFlags: 0
@@ -17635,6 +17655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1725821315
 GameObject:
   m_ObjectHideFlags: 0
@@ -17940,6 +17961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1745071572
 GameObject:
   m_ObjectHideFlags: 0
@@ -20035,6 +20057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1930173121
 GameObject:
   m_ObjectHideFlags: 0
@@ -20999,6 +21022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &1970308922
 GameObject:
   m_ObjectHideFlags: 0
@@ -21303,6 +21327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &2008400926
 GameObject:
   m_ObjectHideFlags: 0
@@ -21720,6 +21745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &2031632374
 GameObject:
   m_ObjectHideFlags: 0
@@ -22023,6 +22049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &2081477025
 GameObject:
   m_ObjectHideFlags: 0
@@ -22504,6 +22531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Clip>k__BackingField: {fileID: 0}
 --- !u!1 &2114670059
 GameObject:
   m_ObjectHideFlags: 0

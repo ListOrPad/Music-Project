@@ -2,18 +2,9 @@ using UnityEngine;
 
 public class Track : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool Completed { get; set; }
+    [field: SerializeField] public AudioClip Clip { get; private set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    //private bool completed;
-    //private AudioClip clip;
+
 }

@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayTrack()
     {
-        PlaySound(tracks.CurrentTrack);
+        PlaySound(tracks.CurrentTrack.Clip);
     }
 
     public void ResumeTrack()
@@ -50,7 +50,7 @@ public class SoundManager : MonoBehaviour
     {
         progressBar.ProgressSlider.value = 0;
         source.clip = null;
-        source.clip = trackList.CurrentTrack;
+        source.clip = trackList.CurrentTrack.Clip;
     }
 
     public void ChangeSpeed(int speed)

@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class TrackList : MonoBehaviour
 {
     [SerializeField] private List<Track> trackObjects;
-    [SerializeField] private List<AudioClip> audioTracks;
 
-    public AudioClip CurrentTrack { get; private set; }
-    public static bool TrackChanged { get; set; }
+    public Track CurrentTrack { get; private set; }
+    public static bool CurrentTrackChanged { get; set; }
 
     public void PrepareTracklistButtons(Game game, Clicker clicker)
     {
-        for (int i = 0; i < trackObjects.Count ; i++)   //just i < ...Count, try it
+        for (int i = 0; i < trackObjects.Count ; i++)
         {
             GameObject trackObject = trackObjects[i].gameObject;
             Button button = trackObject.GetComponentInChildren<Button>();
@@ -23,13 +22,13 @@ public class TrackList : MonoBehaviour
         }
     }
 
-    public void SetNewTrack(int chosenTrackID)
+    public void SetTrack(int chosenTrackID)
     {
-        for (int i = 0; i <= audioTracks.Count; i++)
+        for (int i = 0; i <= trackObjects.Count; i++)
         {
             if (chosenTrackID == i)
             {
-                CurrentTrack = audioTracks[i];
+                CurrentTrack = trackObjects[i];
                 return;
             }
         }
@@ -42,7 +41,7 @@ public class TrackList : MonoBehaviour
     /// </summary>
     private void ChangeData(Clicker clicker, GameObject trackObject)
     {
-        TrackChanged = true;
+        CurrentTrackChanged = true;
 
         //get pic from tracklist item
         Transform mask = trackObject.transform.Find("mask");
@@ -52,7 +51,7 @@ public class TrackList : MonoBehaviour
         clicker.ClickerPic.GetComponent<Image>().sprite = clicker.Pic;
         //set current track to source clip
         AudioSource source = GameObject.Find("SoundManager").GetComponent<AudioSource>();
-        source.clip = CurrentTrack;
+        source.clip = CurrentTrack.Clip;
 
     }
 }
