@@ -495,7 +495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 937826d0b060b884191bd7850b7a164c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -675,12 +675,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 25
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -705,7 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: e177dd3a8e271cf42997045cd0965a50, type: 3}
 --- !u!1 &51942024
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,7 +946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &90199855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1597,6 +1597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218701887}
   - component: {fileID: 218701888}
+  - component: {fileID: 218701889}
   m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
@@ -1634,6 +1635,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218701886}
   m_CullTransparentMesh: 1
+--- !u!114 &218701889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218701886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0c96d64f0387248b9c3a632b521779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 519089769}
+  UniqueText: {fileID: 1577310403}
 --- !u!1 &239658620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,12 +1736,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1751,7 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 186b5b9a2430b2c43a355cd4d188efe8, type: 3}
 --- !u!1 &250608933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,12 +2050,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 28
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2065,7 +2080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: a59dfc10de40c4c468a08adb21f85814, type: 3}
 --- !u!1 &265357532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,12 +2260,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 19
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2275,7 +2290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: f2c45c0388e452845b668fccea0ff542, type: 3}
 --- !u!1 &277773876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2520,7 +2535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7dc05c60e16843c40a197fea5d4ca539, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2865,12 +2880,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2895,7 +2910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 6bc6b1a31a864944482d52a4b65380f4, type: 3}
 --- !u!1 &347341704
 GameObject:
   m_ObjectHideFlags: 0
@@ -3276,7 +3291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74e818b05683e0747b42cedbbe8843a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4092,7 +4107,7 @@ GameObject:
   - component: {fileID: 519089770}
   - component: {fileID: 519089769}
   m_Layer: 0
-  m_Name: Count
+  m_Name: Count Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5044,12 +5059,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5074,7 +5089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 172d0a97aac1a57429950089cde1f336, type: 3}
 --- !u!1 &570170022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5207,7 +5222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dcc383e77703a5740ac7c077b0e58cb2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5484,7 +5499,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 398cbc36abc718342a7e95da882215da, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5654,10 +5669,10 @@ MonoBehaviour:
   <BgAnimation>k__BackingField: {fileID: 1906179639}
   <TrackListGeneral>k__BackingField: {fileID: 1301708573}
   idleTime: 1
-  clickButton: {fileID: 604220524}
   gameProcessCanvas: {fileID: 256169850}
   <Anim>k__BackingField: {fileID: 604220526}
-  scoreObj: {fileID: 0}
+  <clicker>k__BackingField: {fileID: 604220525}
+  scoreObj: {fileID: 218701889}
 --- !u!1 &604220522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5741,19 +5756,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 604220525}
-        m_TargetAssemblyTypeName: Clicker, Assembly-CSharp
-        m_MethodName: Click
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 597031788}
-          m_ObjectArgumentAssemblyTypeName: Game, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &604220525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5766,7 +5769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16925df060ee9ab408994878a981073b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ClickerButton>k__BackingField: {fileID: 0}
+  <ClickerButton>k__BackingField: {fileID: 604220524}
   <ClickerPic>k__BackingField: {fileID: 1745071572}
 --- !u!95 &604220526
 Animator:
@@ -6264,7 +6267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 200501324f95ae94997496b145f9205f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6875,12 +6878,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6905,7 +6908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: a1a38dfa714dc814e98598d78033b907, type: 3}
 --- !u!1 &718999758
 GameObject:
   m_ObjectHideFlags: 0
@@ -7236,12 +7239,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 22
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7266,7 +7269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 791ff09fcb11c764db02e0bdcb355c49, type: 3}
 --- !u!1 &737870876
 GameObject:
   m_ObjectHideFlags: 0
@@ -7955,12 +7958,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 15
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7985,7 +7988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 9ad280996acdf8f49887e394ab860552, type: 3}
 --- !u!1 &837465349
 GameObject:
   m_ObjectHideFlags: 0
@@ -8375,7 +8378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f92869509e9cbba4cbcdb37030d6bade, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8596,7 +8599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20b8622a1d9327c4dab8f16a87739e4e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8671,7 +8674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df053a984bc56ad44a9c268c22611965, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9111,7 +9114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7eb92275e7fb7034dbd9242be93e22b3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9186,7 +9189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f40bdd4288651e4c9e0c2504f1c8a0c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9846,12 +9849,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 23
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9876,7 +9879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 6fb48043f72cb534ca62b8af58ae36a7, type: 3}
 --- !u!1 &1009868386
 GameObject:
   m_ObjectHideFlags: 0
@@ -10135,12 +10138,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10165,7 +10168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 862ebe4c87935264bab4633ecee55f94, type: 3}
 --- !u!1 &1059980925
 GameObject:
   m_ObjectHideFlags: 0
@@ -10335,7 +10338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4188d90ae34ebd44aa430f008b053521, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10860,7 +10863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 545a64c34bd6ead4bb6198278d76b20e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11436,12 +11439,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11466,7 +11469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 6e9893eb6d7009c4fa79506ab889323c, type: 3}
 --- !u!1 &1199038752
 GameObject:
   m_ObjectHideFlags: 0
@@ -11659,7 +11662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 8300000, guid: c32f603c32a21434f9e3d3317dcb4343, type: 3}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 48f2a4c916a7cc943b1f31d3fc3cee2e, type: 3}
 --- !u!1 &1203008497
 GameObject:
   m_ObjectHideFlags: 0
@@ -12264,7 +12267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 8300000, guid: 9ad280996acdf8f49887e394ab860552, type: 3}
+  <Clip>k__BackingField: {fileID: 8300000, guid: c32f603c32a21434f9e3d3317dcb4343, type: 3}
 --- !u!1 &1224780334
 GameObject:
   m_ObjectHideFlags: 0
@@ -12442,12 +12445,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 16
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12472,7 +12475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 72b4c66e37cd97d48aba3cd961090ad7, type: 3}
 --- !u!1 &1269897727
 GameObject:
   m_ObjectHideFlags: 0
@@ -12560,12 +12563,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12590,7 +12593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 62cc9953ee34e6842a2ee778e37e88a1, type: 3}
 --- !u!1 &1271990420
 GameObject:
   m_ObjectHideFlags: 0
@@ -12648,7 +12651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae67d7ab9973df24e89f1dc0a9223d19, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12917,12 +12920,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 24
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12947,7 +12950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 8bbd0e4c7183d5d46a1c8bc0fb7fc032, type: 3}
 --- !u!1 &1295095078
 GameObject:
   m_ObjectHideFlags: 0
@@ -13035,12 +13038,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 18
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13065,7 +13068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 92d66b3f47a3d4640ba84d337a8dec1e, type: 3}
 --- !u!1 &1301708571
 GameObject:
   m_ObjectHideFlags: 0
@@ -13113,6 +13116,34 @@ MonoBehaviour:
   trackObjects:
   - {fileID: 1201540487}
   - {fileID: 1220221167}
+  - {fileID: 1037923783}
+  - {fileID: 323253609}
+  - {fileID: 239658625}
+  - {fileID: 1269897732}
+  - {fileID: 1465894161}
+  - {fileID: 1717228919}
+  - {fileID: 2029281185}
+  - {fileID: 1743625627}
+  - {fileID: 558143693}
+  - {fileID: 1195658256}
+  - {fileID: 718051077}
+  - {fileID: 2102338338}
+  - {fileID: 2003508305}
+  - {fileID: 826712654}
+  - {fileID: 1255846770}
+  - {fileID: 2073611076}
+  - {fileID: 1295095083}
+  - {fileID: 271518026}
+  - {fileID: 1568997699}
+  - {fileID: 1551873745}
+  - {fileID: 730179677}
+  - {fileID: 1008911062}
+  - {fileID: 1291631278}
+  - {fileID: 50211656}
+  - {fileID: 1456867205}
+  - {fileID: 1925804822}
+  - {fileID: 263446988}
+  - {fileID: 1968970434}
 --- !u!1 &1303693494
 GameObject:
   m_ObjectHideFlags: 0
@@ -13470,7 +13501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7876827c3dee75d429adf5f91bd95b59, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13498,7 +13529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1310511921}
   m_Layer: 5
-  m_Name: Perfects
+  m_Name: Uniques
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13821,7 +13852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d10e7e3ed3c4e914485a08f539e36059, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13971,7 +14002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4e4aaa5b3db732488ecc9796bf0616e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15139,12 +15170,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 26
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15169,7 +15200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 1ee41deb5440c1246ad72832ea1f64d6, type: 3}
 --- !u!1 &1458036221
 GameObject:
   m_ObjectHideFlags: 0
@@ -15332,12 +15363,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15362,7 +15393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 27969578cc7a4a344a98c898f99a2a69, type: 3}
 --- !u!1 &1472220323
 GameObject:
   m_ObjectHideFlags: 0
@@ -15866,7 +15897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de32dddf3d9eff24ea3881dbc7ce2886, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16091,7 +16122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 90b14c2089073a54ba7dc34b4c3c7261, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16196,12 +16227,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 21
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16226,7 +16257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 8833233d52cbe8a43b014f234dc82a0a, type: 3}
 --- !u!1 &1552115382
 GameObject:
   m_ObjectHideFlags: 0
@@ -16389,12 +16420,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16419,7 +16450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 4a8fb072b148f0948b9644a8f5e12f07, type: 3}
 --- !u!1 &1577310401
 GameObject:
   m_ObjectHideFlags: 0
@@ -16432,7 +16463,7 @@ GameObject:
   - component: {fileID: 1577310404}
   - component: {fileID: 1577310403}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Unique Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16776,7 +16807,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d1875841993e10a4cb9b291a9450caaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17252,7 +17283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8a7f10304f02ef4490ba03cb90e0362, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17625,12 +17656,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17655,7 +17686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: ed6e3e741ed45494a98b2ea54a658093, type: 3}
 --- !u!1 &1725821315
 GameObject:
   m_ObjectHideFlags: 0
@@ -17931,12 +17962,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17961,7 +17992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 3a7a22b62e96c41468c790a89f3f89ff, type: 3}
 --- !u!1 &1745071572
 GameObject:
   m_ObjectHideFlags: 0
@@ -18484,7 +18515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7876827c3dee75d429adf5f91bd95b59, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd3c45e412630334699b9106b2858559, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19519,7 +19550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d6d3192d82555ee4283962df3d8e900f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19922,7 +19953,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c81e9d4ec675cb448733901e73a8f54, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20027,12 +20058,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 27
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -20057,7 +20088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 78ad946ef4fd20d4585167187d3474d9, type: 3}
 --- !u!1 &1930173121
 GameObject:
   m_ObjectHideFlags: 0
@@ -20115,7 +20146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd93e2a553c22e94a9ed19b9552a8fc7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20557,7 +20588,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e29592cc77af7ab40ad8d7f06105abbe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20992,12 +21023,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 29
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21022,7 +21053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: ffec2d8c117c2be48979d76a167f7298, type: 3}
 --- !u!1 &1970308922
 GameObject:
   m_ObjectHideFlags: 0
@@ -21297,12 +21328,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21327,7 +21358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 0d32d763de92bd84ca81079a4efaae23, type: 3}
 --- !u!1 &2008400926
 GameObject:
   m_ObjectHideFlags: 0
@@ -21385,7 +21416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3bfac425f11ccd4ba31ed458e22efb9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21610,7 +21641,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea8814ac6c53a644d81dc07eaaff37bf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21715,12 +21746,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21745,7 +21776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: ef48341ff55be1246a6fad1513b27493, type: 3}
 --- !u!1 &2031632374
 GameObject:
   m_ObjectHideFlags: 0
@@ -22019,12 +22050,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 17
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -22049,7 +22080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: 800f7c02b8b078a488c3228691ea7076, type: 3}
 --- !u!1 &2081477025
 GameObject:
   m_ObjectHideFlags: 0
@@ -22501,12 +22532,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301708573}
         m_TargetAssemblyTypeName: TrackList, Assembly-CSharp
-        m_MethodName: SetNewTrack
+        m_MethodName: SetTrack
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -22531,7 +22562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 0}
+  <Clip>k__BackingField: {fileID: 8300000, guid: bbc25b4f5b77a454bb41d17ae34b6a3b, type: 3}
 --- !u!1 &2114670059
 GameObject:
   m_ObjectHideFlags: 0
@@ -22664,7 +22695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8110033650b122b47b1ab81f331cd797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 546e90fef96b25e40a99f08034165ac6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

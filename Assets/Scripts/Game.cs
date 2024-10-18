@@ -43,7 +43,7 @@ public class Game : MonoBehaviour
         }
 
         //if Track is completed(progressbar is filled)
-        if (ProgressBar.ProgressSlider.value >= 0.999)
+        if (ProgressBar.ProgressSlider.value >= 0.995)
         {
             BlockPlaying();
             if (!Score.ScoreChanged)
