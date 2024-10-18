@@ -14,10 +14,10 @@ public class BackButton : MonoBehaviour
         backButton.onClick.AddListener(game.SwitchCanvas);
         backButton.onClick.AddListener(soundManager.PauseTrack);
         backButton.onClick.AddListener(() => soundManager.ResetProgress(game.TrackListGeneral, game.ProgressBar));
-        backButton.onClick.AddListener(() => ResetBlock(game));
+        backButton.onClick.AddListener(() => UndoBlock(game));
     }
 
-    private void ResetBlock(Game game)
+    private void UndoBlock(Game game)
     {
         Score.ScoreChanged = false;
         game.clicker.ClickerButton.onClick.AddListener(() => game.clicker.Click(game));

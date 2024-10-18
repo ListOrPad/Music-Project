@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Track : MonoBehaviour
 {
-    public bool Completed { get; set; }
+    public bool UniqueCompleted { get; set; }
     [field: SerializeField] public AudioClip Clip { get; private set; }
 
 

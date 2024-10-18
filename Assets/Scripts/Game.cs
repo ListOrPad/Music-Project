@@ -32,6 +32,7 @@ public class Game : MonoBehaviour
         if(AudSource.isPlaying)
         {
             ProgressBar.UpdateProgressBar(AudSource);
+            //ShowerParticles(); !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         }
 
         // pause if time is out
