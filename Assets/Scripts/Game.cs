@@ -17,6 +17,7 @@ public class Game : MonoBehaviour
     [field: SerializeField] public Animator Anim { get; set; }
     [field: SerializeField] public Clicker clicker { get; set; }
     [SerializeField] private Score scoreObj;
+    public static int ClipSpeed { get; set; }
 
     private void Start()
     {
@@ -40,6 +41,12 @@ public class Game : MonoBehaviour
         {
             SoundManager.Instance.PauseTrack();
             BgAnimation.PauseAnimation();
+        }
+
+        //autoplay
+        if (ClipSpeed == 4)
+        {
+            clicker.Click(this);
         }
 
         //if Track is completed(progressbar is filled)
@@ -81,37 +88,4 @@ public class Game : MonoBehaviour
         BgAnimation.PauseAnimation();
         Anim.ResetTrigger("Click"); //pause twitching
     }
-    
-
-    #region rewarded ad
-    // Subscribe to the ad opening event in OnEnable
-    private void OnEnable()
-    {
-        YandexGame.RewardVideoEvent += Rewarded;
-    }
-
-    // Unsubscribe from the ad opening event in OnDisable
-    private void OnDisable()
-    {
-        YandexGame.RewardVideoEvent -= Rewarded;
-    }
-
-    // Method subscribed to receive a reward
-    private void Rewarded(int id)
-    {
-        if (id == 1)
-        {
-            //SkipExample()
-        }
-    }       
-
-    // Method for calling video ads
-    public void ExampleOpenRewardAd(int id)
-    {
-        // Call the method to open video ads
-        YandexGame.RewVideoShow(id);
-    }
-
-    #endregion
-
 }

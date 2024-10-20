@@ -6,6 +6,7 @@ public class BackButton : MonoBehaviour
     [SerializeField] private Button backButton;
     [SerializeField] private Game game;  //this actually breaks the design, should better create backbutton instance in Game ?
     [SerializeField] private SoundManager soundManager;
+    [SerializeField] private Advertisment ad;
 
     private float adTimer;
 
@@ -20,6 +21,9 @@ public class BackButton : MonoBehaviour
     private void UndoBlock(Game game)
     {
         Score.ScoreChanged = false;
+        ad.AdLock.SetActive(true);
+        Game.ClipSpeed = 0;
+        SoundManager.Instance.Source.pitch = 1f;
         game.clicker.ClickerButton.onClick.AddListener(() => game.clicker.Click(game));
     }
 
