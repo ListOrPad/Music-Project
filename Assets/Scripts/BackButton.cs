@@ -8,6 +8,7 @@ public class BackButton : MonoBehaviour
     [SerializeField] private SoundManager soundManager;
     [SerializeField] private Advertisment ad;
 
+    [SerializeField] private float secUntilAd = 50;
     private float adTimer;
 
     private void Start()
@@ -21,6 +22,7 @@ public class BackButton : MonoBehaviour
     private void UndoBlock(Game game)
     {
         Score.ScoreChanged = false;
+        TrackList.TrackFinished = false;
         ad.AdLock.SetActive(true);
         Game.ClipSpeed = 0;
         SoundManager.Instance.Source.pitch = 1f;
@@ -30,7 +32,7 @@ public class BackButton : MonoBehaviour
     private void Update()
     {
         adTimer += Time.deltaTime;
-        if (adTimer > 50)
+        if (adTimer > secUntilAd)
         {
             //show ad here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

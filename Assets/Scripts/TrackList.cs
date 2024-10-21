@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class TrackList : MonoBehaviour
 {
     [SerializeField] private List<Track> trackObjects;
-
     public Track CurrentTrack { get; private set; }
     public static bool CurrentTrackChanged { get; set; }
+    public static bool TrackFinished { get; set; }
+
 
     public void PrepareTracklistButtons(Game game, Clicker clicker)
     {

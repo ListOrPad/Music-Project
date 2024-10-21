@@ -1,0 +1,1398 @@
+fileFormatVersion: 2
+guid: 4fdac2cf966895c4c803325791f1fe36
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: musical-notes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17456282e97bba84f987f4395a356ca1
+      internalID: -2040749091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_1
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 3360
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e887a74b4652884385232a5f72e7181
+      internalID: -1046000341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_2
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 3360
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d441405e95e8ef24981c3ae023eb5838
+      internalID: 1010207255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_3
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 3360
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947c7d9878681614f98020e52d7c392d
+      internalID: 562997955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_4
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 3360
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7c138ceea071d419d22131a460cabf
+      internalID: 1550818271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_5
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 3360
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9072d70caa2c46d4596be46466f40566
+      internalID: -1994951320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_6
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 3360
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec6a057d97bde84db8f220c4da21598
+      internalID: -609851351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeecdb30314f074d8962f699e64a58e
+      internalID: 440534904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_8
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 2880
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6580bd5ff56f95a439a76c198e9f2bed
+      internalID: 2064841070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_9
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 2880
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01fef45e0d42a74881961bbd36786cc
+      internalID: 1407064493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_10
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 2880
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b4cec49231e06428d41266ecf7a0c5
+      internalID: 1376341368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_11
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 2880
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bee744aa8ead7f4dae4597e8a95c095
+      internalID: -1925114466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_12
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 2880
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d28cfc48b7f0054c987a6158d42bace
+      internalID: 1940807890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_13
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 2880
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115f496557c69904389f93b7e6551a7e
+      internalID: 1075348193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cb13693e377dd489db44a87ebb88bb
+      internalID: -210668963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_15
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 2400
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fdae6d947690b45a1026bd685b233e
+      internalID: -1460435136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_16
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 2400
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70976b41443cd4e4182f9528a241a47f
+      internalID: 1067290560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_17
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 2400
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9eae87d73a74ac4fae763a6906ec27d
+      internalID: 295762738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_18
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 2400
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a500bdc95ea0fa4f82a869b669c3352
+      internalID: -451088370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_19
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 2400
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d720051421934a4a98bb7135ba0c42f
+      internalID: 2038982398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_20
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 2400
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3eff07438304e340ae73bba8516afea
+      internalID: 1114530760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d355356234cda904eac7d2fcb116874e
+      internalID: -1988192873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_22
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1920
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b016a75e1bac9e419093783821fb05b
+      internalID: -1233689797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_23
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1920
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3a8eb7c36fc9a46999384a9f7672fb
+      internalID: -799011895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_24
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1920
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a379ba9d63d2fb64dad3b6bff0d155c6
+      internalID: 1729573386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_25
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1920
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb05407225593f54aa1b82165ce21d57
+      internalID: 510714974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_26
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1920
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0146b1ed2bd81439d842108439a18b
+      internalID: -928852720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_27
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 1920
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef11f5396bb426c4cbe73b5bbe425ac8
+      internalID: 598158679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd08ab7d6a57daa44a7ba79e64b687c0
+      internalID: 2052928279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_29
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1440
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591088c15aabbee4eaab262dd194e6a5
+      internalID: -1244174305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_30
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1440
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0c8fb6b1b10b849861032c0dfc4d76
+      internalID: 1860168093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_31
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1440
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cddff6dfe16724185a5c3720c22aa8
+      internalID: -318179486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_32
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1440
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fa44ed635d9804bb282dafe48baf67
+      internalID: -2106619980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_33
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1440
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686fa97ab4c72d34184ceb7aedc9ea83
+      internalID: 1044312094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_34
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 1440
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1177f2903263845ace08f96805a8aa
+      internalID: -1249961225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf799a765bed1e4086b106fb98f51f8
+      internalID: -392061514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_36
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 960
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3168e5da7c6f70941bfbb7fd8ea97acd
+      internalID: -2071578587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_37
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 960
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276313738531be3468d0dfd1a4a0e2a4
+      internalID: -1694588490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_38
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 960
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76fb5be5c6eaf94383d7dbeeb03881c
+      internalID: 1835180224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_39
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 960
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2eff19aa6cb2c46b041b5158d572fa
+      internalID: -2115167065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_40
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 960
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cbfe95cc9426b41a766ada948ec62c
+      internalID: 854409844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_41
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 960
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059a6c91a4b37e44fb0c7162403a675b
+      internalID: -287216179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba9ef22813ed4040a5c23eb0f78a34f
+      internalID: 1944760370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_43
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 480
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537bdf4519f2cb141b556c38b23df58b
+      internalID: 630233334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_44
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 480
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86afeb4922ad45e469538003c67a331d
+      internalID: -730918648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_45
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 480
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17adead964e57164e953a962c94f0068
+      internalID: -1223969871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_46
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 480
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f076294dfe87cbe4fa3152e51f113ef8
+      internalID: -319340154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_47
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 480
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50460e114cdecc244a52af11bcf55e67
+      internalID: 1701307242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_48
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 480
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d1c8874de6f444a85b4f04ebcf0285
+      internalID: -2059434939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646ae3d23cd8a874f92813abb765d5e4
+      internalID: -1894479099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_50
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 0
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04eeceaf5d2014d4f91a289d6ea58ccb
+      internalID: 1014558160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_51
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 0
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f6af65dfa19ee42adf71c16b452a46
+      internalID: -969013428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_52
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 0
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab9f05565e2fa64b8d35bb3b1337d59
+      internalID: -1910558139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_53
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 0
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869396dac88ba3f43ab7d85b884d3f96
+      internalID: 1167034467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_54
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 0
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfeacdf3849b4ba41ac90968a8493098
+      internalID: -383930554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musical-notes_55
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 0
+        width: 358
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dde6c04c6e31a749acc61fbc1a2dc81
+      internalID: 2105215025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      musical-notes_0: -2040749091
+      musical-notes_1: -1046000341
+      musical-notes_10: 1376341368
+      musical-notes_11: -1925114466
+      musical-notes_12: 1940807890
+      musical-notes_13: 1075348193
+      musical-notes_14: -210668963
+      musical-notes_15: -1460435136
+      musical-notes_16: 1067290560
+      musical-notes_17: 295762738
+      musical-notes_18: -451088370
+      musical-notes_19: 2038982398
+      musical-notes_2: 1010207255
+      musical-notes_20: 1114530760
+      musical-notes_21: -1988192873
+      musical-notes_22: -1233689797
+      musical-notes_23: -799011895
+      musical-notes_24: 1729573386
+      musical-notes_25: 510714974
+      musical-notes_26: -928852720
+      musical-notes_27: 598158679
+      musical-notes_28: 2052928279
+      musical-notes_29: -1244174305
+      musical-notes_3: 562997955
+      musical-notes_30: 1860168093
+      musical-notes_31: -318179486
+      musical-notes_32: -2106619980
+      musical-notes_33: 1044312094
+      musical-notes_34: -1249961225
+      musical-notes_35: -392061514
+      musical-notes_36: -2071578587
+      musical-notes_37: -1694588490
+      musical-notes_38: 1835180224
+      musical-notes_39: -2115167065
+      musical-notes_4: 1550818271
+      musical-notes_40: 854409844
+      musical-notes_41: -287216179
+      musical-notes_42: 1944760370
+      musical-notes_43: 630233334
+      musical-notes_44: -730918648
+      musical-notes_45: -1223969871
+      musical-notes_46: -319340154
+      musical-notes_47: 1701307242
+      musical-notes_48: -2059434939
+      musical-notes_49: -1894479099
+      musical-notes_5: -1994951320
+      musical-notes_50: 1014558160
+      musical-notes_51: -969013428
+      musical-notes_52: -1910558139
+      musical-notes_53: 1167034467
+      musical-notes_54: -383930554
+      musical-notes_55: 2105215025
+      musical-notes_6: -609851351
+      musical-notes_7: 440534904
+      musical-notes_8: 2064841070
+      musical-notes_9: 1407064493
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

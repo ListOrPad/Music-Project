@@ -1,10 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BackgroundAnimation : MonoBehaviour
 {
     [SerializeField] private Animator gifAnimator;
+    [SerializeField] private Animator[] confettiAnims;
     private bool isActive;
 
     void Start()
@@ -26,5 +26,13 @@ public class BackgroundAnimation : MonoBehaviour
     public void PauseAnimation()
     {
         gifAnimator.enabled = false;
+    }
+
+    public void PlayConfetti()
+    {
+        foreach (var confettiAnimator in confettiAnims)
+        {
+            confettiAnimator.Play("NotesVictory", -1, 0);
+        }
     }
 }

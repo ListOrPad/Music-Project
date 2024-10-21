@@ -52,6 +52,12 @@ public class Game : MonoBehaviour
         //if Track is completed(progressbar is filled)
         if (ProgressBar.ProgressSlider.value >= 0.995)
         {
+            if (!TrackList.TrackFinished)
+            {
+                BgAnimation.PlayConfetti();
+                TrackList.TrackFinished = true;
+            }
+
             BlockPlaying();
             if (!Score.ScoreChanged)
             {
