@@ -44,7 +44,7 @@ public class Game : MonoBehaviour
         }
 
         //autoplay
-        if (ClipSpeed == 4)
+        if (ClipSpeed == 4 && !TrackList.TrackFinished) 
         {
             clicker.Click(this);
         }
