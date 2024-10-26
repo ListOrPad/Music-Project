@@ -67,7 +67,6 @@ public class Game : MonoBehaviour
             }
             //what else should happen?
 
-            //PlayConfettiGif();
             //ResetAdBlock() (if track wasnt completed)???
 
             //allow voting for mark

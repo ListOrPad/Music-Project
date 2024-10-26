@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,22 +38,15 @@ public class TrackList : MonoBehaviour
     {
         foreach (var trackObject in trackObjects)
         {
-            //get all the images from some track object children
-            Image[] trackImages = trackObject.GetComponentsInChildren<Image>();
+            Image trackImage = trackObject.GetComponentInChildren<Image>();
 
             if (trackObject.UniqueCompleted) //then Light up
             {
-                foreach (var trackImage in trackImages)
-                {
-                    trackImage.color = new Color(1,1,1,1);
-                }
+                trackImage.color = new Color(1,1,1,1);
             }
             else //darken
             {
-                foreach (var trackImage in trackImages)
-                {
-                    trackImage.color = new Color32(145, 145, 145, 255);
-                }
+                trackImage.color = new Color32(145, 145, 145, 255);
             }
         }
     }
@@ -81,8 +73,7 @@ public class TrackList : MonoBehaviour
         CurrentTrackChanged = true;
 
         //get pic from tracklist item
-        Transform mask = trackObject.transform.Find("mask");
-        Transform picTransform = mask.transform.Find("Pic");
+        Transform picTransform = trackObject.transform.Find("Pic");
         Image pic = picTransform.GetComponent<Image>();
         clicker.Pic = pic.sprite; //finally set pic
         clicker.ClickerPic.GetComponent<Image>().sprite = clicker.Pic;

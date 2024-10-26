@@ -3,8 +3,8 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    private int score;
-    private int uniqueCount;
+    public int ScoreCount { get; private set; }
+    public int UniqueCount { get; private set; }
 
     public static bool ScoreChanged { get; set; }
 
@@ -13,18 +13,18 @@ public class Score : MonoBehaviour
 
     public void WriteScoreText()
     {
-        ScoreText.text = score.ToString();
+        ScoreText.text = ScoreCount.ToString();
 
-        UniqueText.text = $"{uniqueCount}/30";
+        UniqueText.text = $"{UniqueCount}/30";
     }
 
     public void AddScore(Track currentTrack)
     {
         if (!currentTrack.UniqueCompleted)
         {
-            uniqueCount += 1;
+            UniqueCount += 1;
             currentTrack.UniqueCompleted = true;
         }
-        score += 1;
+        ScoreCount += 1;
     }
 }

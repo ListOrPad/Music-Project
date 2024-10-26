@@ -7,6 +7,10 @@ public class Advertisment : MonoBehaviour
 {
     [field:SerializeField] public GameObject AdLock { get; private set; }
 
+    public int CurrentAdID { get; private set; }
+
+    public bool IsWatched { get; set; }
+
     // Subscribe to the ad opening event in OnEnable
     private void OnEnable()
     {
@@ -25,6 +29,11 @@ public class Advertisment : MonoBehaviour
         if (id == 1)
         {
             UnlockBookmark();
+        }
+        if (id >= 2 && id <= 7)
+        {
+            IsWatched = true;
+            CurrentAdID = id - 2;
         }
     }
 
