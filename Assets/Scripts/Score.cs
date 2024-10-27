@@ -11,6 +11,7 @@ public class Score : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ScoreText;
     [SerializeField] private TextMeshProUGUI UniqueText;
 
+
     public void WriteScoreText()
     {
         ScoreText.text = ScoreCount.ToString();
