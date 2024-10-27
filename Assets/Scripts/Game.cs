@@ -17,12 +17,14 @@ public class Game : MonoBehaviour
     [field: SerializeField] public Animator Anim { get; set; }
     [field: SerializeField] public Clicker clicker { get; set; }
     [SerializeField] private Score scoreObj;
+    private Advertisment ad;
     public static int ClipSpeed { get; set; }
 
     private void Start()
     {
         TrackListGeneral.PrepareTracklistButtons(this, clicker);
         clicker.ClickerButton.onClick.AddListener(() => clicker.Click(this));
+        ad = GetComponent<Advertisment>();
         Timer = 0f;
     }
 
@@ -33,7 +35,12 @@ public class Game : MonoBehaviour
         if(AudSource.isPlaying)
         {
             ProgressBar.UpdateProgressBar(AudSource);
-            //ShowerParticles(); !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        }
+
+        if (TrackList.CurrentTrackChanged)
+        {
+            UnlockBookMarks();
+            TrackList.CurrentTrackChanged = false;
         }
 
         // pause if time is out
@@ -67,8 +74,6 @@ public class Game : MonoBehaviour
             }
             //what else should happen?
 
-            //ResetAdBlock() (if track wasnt completed)???
-
             //allow voting for mark
         }
 
@@ -92,5 +97,13 @@ public class Game : MonoBehaviour
         SoundManager.Instance.PauseTrack();
         BgAnimation.PauseAnimation();
         Anim.ResetTrigger("Click"); //pause twitching
+    }
+
+    private void UnlockBookMarks()
+    {
+        if (TrackListGeneral.CurrentTrack.UniqueCompleted)
+        {
+            ad.AdLock.gameObject.SetActive(false);
+        }
     }
 }

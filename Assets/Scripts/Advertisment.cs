@@ -28,7 +28,7 @@ public class Advertisment : MonoBehaviour
     {
         if (id == 1)
         {
-            UnlockBookmark();
+            UnlockBookmarks();
         }
         if (id >= 2 && id <= 7)
         {
@@ -44,7 +44,7 @@ public class Advertisment : MonoBehaviour
         YandexGame.RewVideoShow(id);
     }
 
-    private void UnlockBookmark()
+    private void UnlockBookmarks()
     {
         AdLock.SetActive(false);
     }
