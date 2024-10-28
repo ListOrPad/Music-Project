@@ -49,6 +49,7 @@ public class SoundManager : MonoBehaviour
     public void ResetProgress(TrackList trackList, ProgressBar progressBar)
     {
         progressBar.ProgressSlider.value = 0;
+        progressBar.progressText.text = "0%";
         Source.clip = null;
         Source.clip = trackList.CurrentTrack.Clip;
     }

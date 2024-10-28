@@ -34,7 +34,7 @@ public class Game : MonoBehaviour
 
         if(AudSource.isPlaying)
         {
-            ProgressBar.UpdateProgressBar(AudSource);
+            ProgressBar.UpdateProgress(AudSource);
         }
 
         if (TrackList.CurrentTrackChanged)
