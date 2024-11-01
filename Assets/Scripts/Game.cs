@@ -66,15 +66,16 @@ public class Game : MonoBehaviour
             }
 
             BlockPlaying();
+
             if (!Score.ScoreChanged)
             {
                 scoreObj.AddScore(TrackListGeneral.CurrentTrack);
                 scoreObj.WriteScoreText();
                 Score.ScoreChanged = true;
             }
-            //what else should happen?
 
-            //allow voting for mark
+            //make voter appear
+            gameObject.GetComponent<VoteSystem>().Appear();
         }
 
     }

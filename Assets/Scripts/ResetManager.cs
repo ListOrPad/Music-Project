@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
-public class BackButton : MonoBehaviour
+public class ResetManager : MonoBehaviour
 {
     [SerializeField] private Button backButton;
-    [SerializeField] private Game game;  //this actually breaks the design, should better create backbutton instance in Game ?
+    [SerializeField] private Game game;
     [SerializeField] private SoundManager soundManager;
     [SerializeField] private BookmarkManager bookmarkManager;
     [SerializeField] private Advertisment ad;
+    [SerializeField] private VoteSystem voteSystem;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class BackButton : MonoBehaviour
     /// </summary>
     private void ResetGame()
     {
+        //reset
         Score.ScoreChanged = false;
         TrackList.TrackFinished = false;
         game.SwitchCanvas();

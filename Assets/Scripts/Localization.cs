@@ -14,5 +14,6 @@ public class Localization : MonoBehaviour
     private void Start()
     {
         CurrentLang = YandexGame.lang;
+        LangChanged = true;
     }
 }

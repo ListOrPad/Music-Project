@@ -10,6 +10,9 @@ public class TrackList : MonoBehaviour
     public static bool CurrentTrackChanged { get; set; }
     public static bool TrackFinished { get; set; }
 
+    [SerializeField] private VoteSystem voteSystem;
+
+
     private void Start()
     {
         LightTrackItems();
@@ -19,6 +22,12 @@ public class TrackList : MonoBehaviour
         if (TrackFinished)
         {
             LightTrackItems();
+        }
+
+        if (voteSystem.VoteChanged)
+        {
+            CurrentTrack.ActivateVote();
+            voteSystem.VoteChanged = false;
         }
     }
 
