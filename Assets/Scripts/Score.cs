@@ -11,6 +11,11 @@ public class Score : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ScoreText;
     [SerializeField] private TextMeshProUGUI UniqueText;
 
+    private void Start()
+    {
+        ScoreCount = MySaver.Instance.scoreCount;
+        UniqueCount = MySaver.Instance.uniqueCount;
+    }
 
     public void WriteScoreText()
     {

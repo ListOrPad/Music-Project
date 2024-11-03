@@ -4,8 +4,11 @@ using YG;
 
 public class MySaver : MonoBehaviour
 {
+    public static MySaver Instance;
+
     private Coroutine myCoroutine;
-    private int score;
+    public int scoreCount;
+    public int uniqueCount;
 
     private void OnEnable()
     {
@@ -30,7 +33,8 @@ public class MySaver : MonoBehaviour
     /// </summary>
     public void GetLoad()
     {
-        score = YandexGame.savesData.Score;
+        scoreCount = YandexGame.savesData.Score;
+        uniqueCount = YandexGame.savesData.UniqueCount;
     }
 
     /// <summary>
@@ -40,7 +44,8 @@ public class MySaver : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
 
-        YandexGame.savesData.Score = score;
+        YandexGame.savesData.Score = scoreCount;
+        YandexGame.savesData.UniqueCount = uniqueCount;
         //save
         YandexGame.SaveProgress();
 
