@@ -22,5 +22,4 @@ public class Track : MonoBehaviour
             vote[0].SetActive(false);
         }
     }
-
 }

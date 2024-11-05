@@ -9,6 +9,16 @@ public class MySaver : MonoBehaviour
     private Coroutine myCoroutine;
     public int scoreCount;
     public int uniqueCount;
+    public bool[] uniquesCompleted;
+    public bool[] votesUp;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
 
     private void OnEnable()
     {
@@ -35,6 +45,8 @@ public class MySaver : MonoBehaviour
     {
         scoreCount = YandexGame.savesData.Score;
         uniqueCount = YandexGame.savesData.UniqueCount;
+        uniquesCompleted = YandexGame.savesData.UniquesCompleted;
+        votesUp = YandexGame.savesData.VotesUp;
     }
 
     /// <summary>
@@ -46,6 +58,8 @@ public class MySaver : MonoBehaviour
 
         YandexGame.savesData.Score = scoreCount;
         YandexGame.savesData.UniqueCount = uniqueCount;
+        YandexGame.savesData.UniquesCompleted = uniquesCompleted;
+        YandexGame.savesData.VotesUp = votesUp;
         //save
         YandexGame.SaveProgress();
 

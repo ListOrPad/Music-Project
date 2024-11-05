@@ -15,17 +15,43 @@ public class TrackList : MonoBehaviour
 
     private void Start()
     {
+        //load data from MySaver
+        for (int i = 0; i < trackObjects.Count; i++)
+        {
+            Track track = trackObjects[i];
+            track.UniqueCompleted = MySaver.Instance.uniquesCompleted[i];
+            track.VoteUp = MySaver.Instance.votesUp[i];
+            track.ActivateVote();
+        }
+
         LightTrackItems();
     }
     private void Update()
     {
         if (TrackFinished)
         {
+            for (int i = 0; i < trackObjects.Count; i++)
+            {
+                //let uniques completed be saved in MySaver
+                Track track = trackObjects[i];
+                if (track.UniqueCompleted)
+                {
+                    MySaver.Instance.uniquesCompleted[i] = track.UniqueCompleted;
+                }
+            }
+
             LightTrackItems();
         }
 
         if (voteSystem.VoteChanged)
         {
+            for (int i = 0; i < trackObjects.Count; i++)
+            {
+                //saves votes in MySaver
+                Track track = trackObjects[i];
+                MySaver.Instance.votesUp[i] = track.VoteUp;
+            }
+
             CurrentTrack.ActivateVote();
             voteSystem.VoteChanged = false;
         }
@@ -61,7 +87,9 @@ public class TrackList : MonoBehaviour
     }
 
     
-
+    /// <summary>
+    /// bind to the track button
+    /// </summary>
     public void SetTrack(int chosenTrackID)
     {
         for (int i = 0; i <= trackObjects.Count; i++)

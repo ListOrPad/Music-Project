@@ -14,7 +14,8 @@ namespace YG
 
         public int Score = 0;
         public int UniqueCount = 0;
-        public bool[] UniuesCompleted = new bool[30];
+        public bool[] UniquesCompleted = new bool[30];
+        public bool[] VotesUp = new bool[30];
 
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()

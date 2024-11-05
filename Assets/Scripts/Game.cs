@@ -25,6 +25,9 @@ public class Game : MonoBehaviour
         TrackListGeneral.PrepareTracklistButtons(this, clicker);
         clicker.ClickerButton.onClick.AddListener(() => clicker.Click(this));
         ad = GetComponent<Advertisment>();
+
+        scoreObj.WriteScoreText();
+
         Timer = 0f;
     }
 
@@ -39,7 +42,7 @@ public class Game : MonoBehaviour
 
         if (TrackList.CurrentTrackChanged)
         {
-            UnlockBookMarks();
+            UnlockBookmarks();
             TrackList.CurrentTrackChanged = false;
         }
 
@@ -100,7 +103,7 @@ public class Game : MonoBehaviour
         Anim.ResetTrigger("Click"); //pause twitching
     }
 
-    private void UnlockBookMarks()
+    private void UnlockBookmarks()
     {
         if (TrackListGeneral.CurrentTrack.UniqueCompleted)
         {

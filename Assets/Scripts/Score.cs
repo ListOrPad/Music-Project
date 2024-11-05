@@ -13,6 +13,7 @@ public class Score : MonoBehaviour
 
     private void Start()
     {
+        //load data from MySaver
         ScoreCount = MySaver.Instance.scoreCount;
         UniqueCount = MySaver.Instance.uniqueCount;
     }
@@ -29,8 +30,10 @@ public class Score : MonoBehaviour
         if (!currentTrack.UniqueCompleted)
         {
             UniqueCount += 1;
+            MySaver.Instance.uniqueCount += 1;
             currentTrack.UniqueCompleted = true;
         }
         ScoreCount += 1;
+        MySaver.Instance.scoreCount += 1;
     }
 }
