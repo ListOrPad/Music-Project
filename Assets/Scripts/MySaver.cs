@@ -11,6 +11,7 @@ public class MySaver : MonoBehaviour
     public int uniqueCount;
     public bool[] uniquesCompleted;
     public bool[] votesUp;
+    public bool[] voteChanges;
 
     private void Awake()
     {
@@ -47,6 +48,7 @@ public class MySaver : MonoBehaviour
         uniqueCount = YandexGame.savesData.UniqueCount;
         uniquesCompleted = YandexGame.savesData.UniquesCompleted;
         votesUp = YandexGame.savesData.VotesUp;
+        voteChanges = YandexGame.savesData.VoteChanges;
     }
 
     /// <summary>
@@ -60,6 +62,7 @@ public class MySaver : MonoBehaviour
         YandexGame.savesData.UniqueCount = uniqueCount;
         YandexGame.savesData.UniquesCompleted = uniquesCompleted;
         YandexGame.savesData.VotesUp = votesUp;
+        YandexGame.savesData.VoteChanges = voteChanges;
         //save
         YandexGame.SaveProgress();
 

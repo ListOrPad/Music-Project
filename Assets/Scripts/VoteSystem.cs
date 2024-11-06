@@ -8,12 +8,11 @@ public class VoteSystem : MonoBehaviour
     [SerializeField] private GameObject voter;
     [SerializeField] private TrackList trackList;
 
-    public bool VoteChanged { get; set; }
-
     [Header("UI elements")]
     [SerializeField] private Button voteUpBtn;
     [SerializeField] private Button voteDownBtn;
 
+    public bool IsVoted { get; set; }
 
     private void Start()
     {
@@ -39,6 +38,6 @@ public class VoteSystem : MonoBehaviour
             trackList.CurrentTrack.VoteUp = false;
         }
 
-        VoteChanged = true;
+        IsVoted = true;
     }
 }

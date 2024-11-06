@@ -5,9 +5,10 @@ public class Track : MonoBehaviour
     public bool UniqueCompleted { get; set; }
     [field: SerializeField] public AudioClip Clip { get; private set; }
 
+    //votes
     [SerializeField] private GameObject[] vote;
-
     public bool VoteUp { get; set; }
+    public bool VoteChanged { get; set; }
 
     public void ActivateVote()
     {
@@ -21,5 +22,7 @@ public class Track : MonoBehaviour
             vote[1].SetActive(true);
             vote[0].SetActive(false);
         }
+
+        VoteChanged = true;
     }
 }

@@ -12,7 +12,6 @@ public class TrackList : MonoBehaviour
 
     [SerializeField] private VoteSystem voteSystem;
 
-
     private void Start()
     {
         //load data from MySaver
@@ -21,7 +20,11 @@ public class TrackList : MonoBehaviour
             Track track = trackObjects[i];
             track.UniqueCompleted = MySaver.Instance.uniquesCompleted[i];
             track.VoteUp = MySaver.Instance.votesUp[i];
-            track.ActivateVote();
+            track.VoteChanged = MySaver.Instance.voteChanges[i];
+            if (track.VoteChanged)
+            {
+                track.ActivateVote();
+            }
         }
 
         LightTrackItems();
@@ -43,7 +46,7 @@ public class TrackList : MonoBehaviour
             LightTrackItems();
         }
 
-        if (voteSystem.VoteChanged)
+        if (voteSystem.IsVoted)
         {
             for (int i = 0; i < trackObjects.Count; i++)
             {
@@ -53,7 +56,15 @@ public class TrackList : MonoBehaviour
             }
 
             CurrentTrack.ActivateVote();
-            voteSystem.VoteChanged = false;
+
+            for (int i = 0; i < trackObjects.Count; i++)
+            {
+                //marks trackObjects as voted
+                Track track = trackObjects[i];
+                MySaver.Instance.voteChanges[i] = track.VoteChanged;
+            }
+
+            voteSystem.IsVoted = false;
         }
     }
 
