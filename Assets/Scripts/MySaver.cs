@@ -12,6 +12,7 @@ public class MySaver : MonoBehaviour
     public bool[] uniquesCompleted;
     public bool[] votesUp;
     public bool[] voteChanges;
+    //public bool[] adsViewed;   ?????????
 
     private void Awake()
     {

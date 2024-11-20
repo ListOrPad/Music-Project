@@ -5129,6 +5129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreCount: 0
   uniqueCount: 0
+  uniquesCompleted: 
+  votesUp: 
+  voteChanges: 
 --- !u!114 &597031787
 MonoBehaviour:
   m_ObjectHideFlags: 0
