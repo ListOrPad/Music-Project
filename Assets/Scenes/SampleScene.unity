@@ -5132,6 +5132,7 @@ MonoBehaviour:
   uniquesCompleted: 
   votesUp: 
   voteChanges: 
+  adsViewed: 
 --- !u!114 &597031787
 MonoBehaviour:
   m_ObjectHideFlags: 0

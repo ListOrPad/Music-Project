@@ -10,7 +10,6 @@ public class TrackUnlockManager : MonoBehaviour
     [Header("Basic")]
     [SerializeField] private Score score;
     [SerializeField] private Advertisment advertisment;
-    private TrackList trackList;
 
     [Header("Tracks")]
     [SerializeField] private Track halfUniquesTrack;
@@ -41,8 +40,8 @@ public class TrackUnlockManager : MonoBehaviour
         thirtyfiveStarsTrack.gameObject.GetComponent<Button>().interactable = false;
         fiftyStarsTrack.gameObject.GetComponent<Button>().interactable = false;
 
-        thirtyfiveStarsText.text = $"35 <sprite=0>";
-        fiftyStarsText.text = $"50 <sprite=0>";
+        thirtyfiveStarsText.text = $"30 <sprite=0>";
+        fiftyStarsText.text = $"40 <sprite=0>";
 
         UpdateText();
         Unlock();
@@ -63,8 +62,8 @@ public class TrackUnlockManager : MonoBehaviour
 
     private void UpdateText()
     {
-        halfUniquesText.text = $"{score.UniqueCount} / 15";
-        maxUniquesText.text = $"{score.UniqueCount} / 30";
+        halfUniquesText.text = $"{score.UniqueCount} / 10";
+        maxUniquesText.text = $"{score.UniqueCount} / 20";
     }
 
     
@@ -81,7 +80,7 @@ public class TrackUnlockManager : MonoBehaviour
                 if (chosenAdIndex == i)
                 {
                     rewAdTracks[chosenAdIndex].gameObject.GetComponent<Button>().interactable = true;
-                    rewAdTracks[chosenAdIndex].transform.Find("Ad Pic").gameObject.SetActive(false); //will this implementation be saved through sessions????????????????????????
+                    rewAdTracks[chosenAdIndex].transform.Find("Ad Pic").gameObject.SetActive(false);
                 }
             }
             advertisment.IsWatched = false;
@@ -98,22 +97,22 @@ public class TrackUnlockManager : MonoBehaviour
             }
         }
 
-        if (score.UniqueCount >= 15)
+        if (score.UniqueCount >= 10)
         {
             halfUniquesTrack.gameObject.GetComponent<Button>().interactable = true;
             halfUniquesText.gameObject.SetActive(false);
         }
-        if (score.UniqueCount >= 30)
+        if (score.UniqueCount >= 20)
         {
             maxUniquesTrack.gameObject.GetComponent<Button>().interactable = true;
             maxUniquesText.gameObject.SetActive(false);
         }
-        if (score.ScoreCount >= 35)
+        if (score.ScoreCount >= 30)
         {
             thirtyfiveStarsTrack.gameObject.GetComponent<Button>().interactable = true;
             thirtyfiveStarsText.gameObject.SetActive(false);
         }
-        if (score.ScoreCount >= 50)
+        if (score.ScoreCount >= 40)
         {
             fiftyStarsTrack.gameObject.GetComponent<Button>().interactable = true;
             fiftyStarsText.gameObject.SetActive(false);

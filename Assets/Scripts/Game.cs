@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
-using YG;
 
 [System.Serializable]
 public class Game : MonoBehaviour

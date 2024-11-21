@@ -1,6 +1,4 @@
-﻿using YG;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class VoteSystem : MonoBehaviour
