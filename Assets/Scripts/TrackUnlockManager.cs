@@ -87,6 +87,17 @@ public class TrackUnlockManager : MonoBehaviour
             advertisment.IsWatched = false;
         }
 
+        //unlock tracks opened before
+        for (int i = 0; i < rewAdTracks.Count; i++)
+        {
+            bool adViewedEarlier = MySaver.Instance.adsViewed[i];
+            if (adViewedEarlier)
+            {
+                rewAdTracks[i].gameObject.GetComponent<Button>().interactable = true;
+                rewAdTracks[i].transform.Find("Ad Pic").gameObject.SetActive(false);
+            }
+        }
+
         if (score.UniqueCount >= 15)
         {
             halfUniquesTrack.gameObject.GetComponent<Button>().interactable = true;

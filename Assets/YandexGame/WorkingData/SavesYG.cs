@@ -17,6 +17,7 @@ namespace YG
         public bool[] UniquesCompleted = new bool[30];
         public bool[] VotesUp = new bool[30];
         public bool[] VoteChanges = new bool[30];
+        public bool[] AdsViewed = new bool[6];
 
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()

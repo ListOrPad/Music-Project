@@ -1,9 +1,9 @@
 {
-  "idSave": 249,
+  "idSave": 300,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Score": 9,
+  "Score": 10,
   "UniqueCount": 8,
   "UniquesCompleted": [
     true,
@@ -100,5 +100,13 @@
     false,
     true,
     false
+  ],
+  "AdsViewed": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    true
   ]
 }

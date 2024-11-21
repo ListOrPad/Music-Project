@@ -34,6 +34,7 @@ public class Advertisment : MonoBehaviour
         {
             IsWatched = true;
             CurrentAdID = id - 2;
+            MySaver.Instance.adsViewed[CurrentAdID] = true;
         }
     }
 
