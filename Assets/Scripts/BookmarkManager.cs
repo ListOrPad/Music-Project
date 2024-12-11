@@ -6,6 +6,7 @@ public class BookmarkManager : MonoBehaviour
 
     private bool bookmarkChanged;
     private int updateCycles = 0;
+    private const int targetUpdateCycles = 6;
     private Vector3 extensionSpeed = new Vector3(5, 0);
 
     private void Start()
@@ -34,7 +35,7 @@ public class BookmarkManager : MonoBehaviour
             MoveBookmark();
             updateCycles++;
         }
-        if (updateCycles == 12)
+        if (updateCycles == targetUpdateCycles)
         {
             bookmarkChanged = false;
             updateCycles = 0;
@@ -62,12 +63,12 @@ public class BookmarkManager : MonoBehaviour
         {
             if (bookmark.Selected)
             {
-                if (bookmark.Transform.position.x < 75)
+                if (bookmark.Transform.position.x < 95)
                     bookmark.Transform.position += extensionSpeed;
             }
             else
             {
-                if (bookmark.Transform.position.x > 15)
+                if (bookmark.Transform.position.x > 70)
                 {
                     bookmark.Transform.position -= extensionSpeed;
                 }
