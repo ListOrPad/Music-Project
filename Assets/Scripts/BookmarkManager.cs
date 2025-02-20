@@ -61,17 +61,13 @@ public class BookmarkManager : MonoBehaviour
     {
         foreach (var bookmark in bookmarks)
         {
-            if (bookmark.Selected)
+            if (bookmark.Selected && bookmark.Transform.position.x < 40)
             {
-                if (bookmark.Transform.position.x < 95)
-                    bookmark.Transform.position += extensionSpeed;
+                bookmark.Transform.position += extensionSpeed;
             }
-            else
+            else if (bookmark.Transform.position.x > 10)
             {
-                if (bookmark.Transform.position.x > 70)
-                {
-                    bookmark.Transform.position -= extensionSpeed;
-                }
+                bookmark.Transform.position -= extensionSpeed;
             }
         }
     }
