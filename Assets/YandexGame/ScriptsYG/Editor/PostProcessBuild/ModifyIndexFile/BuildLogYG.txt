@@ -1,2 +1,2 @@
-Build path: H:/Мой диск/YG проекты/Meme Music Project/Build/Tesr Build 2
-Build number: 21
+Build path: H:/Мой диск/YG проекты/Meme Music Project/Build/Test Build 4
+Build number: 23

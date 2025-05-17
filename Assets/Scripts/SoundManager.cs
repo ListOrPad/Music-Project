@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
@@ -5,8 +6,11 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance;
     public AudioSource Source { get; set; }
 
-    [SerializeField] private TrackList tracks;
+    [DllImport("__Internal")]
+    public static extern void InitializeAudioSystem(string path);
 
+    [DllImport("__Internal")]
+    public static extern void ControlAudio(string action);
 
     private void Awake()
     {
@@ -25,31 +29,29 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void PlaySound(AudioClip clip)
-    {
-        Source.PlayOneShot(clip);
-    }
-
-    public void PlayTrack()
-    {
-        PlaySound(tracks.CurrentTrack.Clip);
-    }
-
     public void ResumeTrack()
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        ControlAudio("play");
+#else
         Source.Play();
+#endif
     }
     public void PauseTrack()
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        ControlAudio("pause");
+#else
         Source.Pause();
+#endif
     }
 
-    public void ResetProgress(TrackList trackList, ProgressBar progressBar)
+    public void ResetProgress(ProgressBar progressBar)
     {
         progressBar.ProgressSlider.value = 0;
         progressBar.progressText.text = "0%";
         Source.clip = null;
-        Source.clip = trackList.CurrentTrack.Clip;
+        Source.clip = TrackList.CurrentTrack.Clip;
     }
 
     public void ChangeSpeed(int speed)

@@ -70,7 +70,7 @@ public class Game : MonoBehaviour
 
             if (!Score.ScoreChanged)
             {
-                scoreObj.AddScore(TrackListGeneral.CurrentTrack);
+                scoreObj.AddScore(TrackList.CurrentTrack);
                 scoreObj.WriteScoreText();
                 Score.ScoreChanged = true;
             }
@@ -103,7 +103,7 @@ public class Game : MonoBehaviour
 
     private void UnlockBookmarks()
     {
-        if (TrackListGeneral.CurrentTrack.UniqueCompleted)
+        if (TrackList.CurrentTrack.UniqueCompleted)
         {
             ad.AdLock.gameObject.SetActive(false);
         }

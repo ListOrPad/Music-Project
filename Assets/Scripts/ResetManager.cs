@@ -30,7 +30,7 @@ public class ResetManager : MonoBehaviour
         Game.ClipSpeed = 0;
         soundManager.PauseTrack();
         SoundManager.Instance.Source.pitch = 1f;
-        soundManager.ResetProgress(game.TrackListGeneral, game.ProgressBar);
+        soundManager.ResetProgress(game.ProgressBar);
         bookmarkManager.ResetToFirst();
         game.clicker.ClickerButton.onClick.AddListener(() => game.clicker.Click(game));
     }

@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class TrackList : MonoBehaviour
 {
     [SerializeField] private List<Track> trackObjects;
-    public Track CurrentTrack { get; private set; }
+    [SerializeField] public List<string> webGLTrackPaths;
+    public static Track CurrentTrack { get; private set; }
     public static bool CurrentTrackChanged { get; set; }
     public static bool TrackFinished { get; set; }
 
@@ -107,7 +108,11 @@ public class TrackList : MonoBehaviour
         {
             if (chosenTrackID == i)
             {
+#if UNITY_WEBGL && !UNITY_EDITOR
+                SoundManager.InitializeAudioSystem(trackObjects[i].WebGLPath);
+#else
                 CurrentTrack = trackObjects[i];
+#endif
                 return;
             }
         }

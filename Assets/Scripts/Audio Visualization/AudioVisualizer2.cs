@@ -1,48 +1,49 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
 
-public class AudioVisualizer2 : MonoBehaviour
-{
-    private AudioSource audioSource;
-    public Transform[] visualizerObjects; // Объекты для визуализации
-    public float scaleMultiplier = 10f; // Множитель для масштабирования
+//public class AudioVisualizer2 : MonoBehaviour
+//{
+//    private AudioSource audioSource;
+//    public Transform[] visualizerObjects; // Объекты для визуализации
+//    public float scaleMultiplier = 10f; // Множитель для масштабирования
+//    float[] samples = new float[1024];
 
-    //Smoothing
-    private float[] smoothedAmplitudes = new float[8];
-    public float smoothSpeed = 0.5f; // Скорость сглаживания
 
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+//    //Smoothing
+//    private float[] smoothedAmplitudes = new float[8];
+//    public float smoothSpeed = 0.5f; // Скорость сглаживания
 
-    private void Update()
-    {
-        float[] samples = new float[1024];
-        audioSource.clip.GetData(samples, audioSource.timeSamples);
+//    private void Start()
+//    {
+//        audioSource = GetComponent<AudioSource>();
+//    }
 
-        // Разделяем samples на восемь частей
-        int samplesPerObject = samples.Length / 8;
+//    private void Update()
+//    {
+//        audioSource.clip.GetData(samples, audioSource.timeSamples);
 
-        for (int i = 0; i < 8; i++)
-        {
-            float sum = 0;
+//        // Разделяем samples на восемь частей
+//        int samplesPerObject = samples.Length / 8;
 
-            // Вычисляем среднюю амплитуду для каждой части
-            for (int j = 0; j < samplesPerObject; j++)
-            {
-                int index = i * samplesPerObject + j;
-                sum += Mathf.Abs(samples[index]);
-            }
+//        for (int i = 0; i < 8; i++)
+//        {
+//            float sum = 0;
 
-            float averageAmplitude = sum / samplesPerObject;
+//            // Вычисляем среднюю амплитуду для каждой части
+//            for (int j = 0; j < samplesPerObject; j++)
+//            {
+//                int index = i * samplesPerObject + j;
+//                sum += Mathf.Abs(samples[index]);
+//            }
 
-            // Сглаживаем амплитуду
-            smoothedAmplitudes[i] = Mathf.Lerp(smoothedAmplitudes[i], averageAmplitude, smoothSpeed * Time.deltaTime);
+//            float averageAmplitude = sum / samplesPerObject;
 
-            // Масштабируем объект
-            visualizerObjects[i].localScale = new Vector3(1, smoothedAmplitudes[i] * scaleMultiplier, 1);
-        }
-    }
-}
+//            // Сглаживаем амплитуду
+//            smoothedAmplitudes[i] = Mathf.Lerp(smoothedAmplitudes[i], averageAmplitude, smoothSpeed * Time.deltaTime);
+
+//            // Масштабируем объект
+//            visualizerObjects[i].localScale = new Vector3(1, smoothedAmplitudes[i] * scaleMultiplier, 1);
+//        }
+//    }
+//}

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class VoteSystem : MonoBehaviour
 {
     [SerializeField] private GameObject voter;
-    [SerializeField] private TrackList trackList;
 
     [Header("UI elements")]
     [SerializeField] private Button voteUpBtn;
@@ -29,11 +28,11 @@ public class VoteSystem : MonoBehaviour
 
         if (up)
         {
-            trackList.CurrentTrack.VoteUp = true;
+            TrackList.CurrentTrack.VoteUp = true;
         }
         else
         {
-            trackList.CurrentTrack.VoteUp = false;
+            TrackList.CurrentTrack.VoteUp = false;
         }
 
         IsVoted = true;

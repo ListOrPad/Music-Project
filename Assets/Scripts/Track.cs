@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class Track : MonoBehaviour
 {
-    public bool UniqueCompleted { get; set; }
     [field: SerializeField] public AudioClip Clip { get; private set; }
+    [field: SerializeField] public string WebGLPath { get; private set; }
+
+    public bool UniqueCompleted { get; set; }
 
     //votes
     [SerializeField] private GameObject[] vote;

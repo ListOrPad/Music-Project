@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour
 {
+
     [field:SerializeField] public Button ClickerButton { get; private set; }
     //pic section
     [field:SerializeField] public GameObject ClickerPic { get; set; }

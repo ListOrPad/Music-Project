@@ -30,7 +30,7 @@ public class Leaderboard : MonoBehaviour
     private void writeScoreLb()
     {
         prevScore = currentScore;
-        Debug.Log(currentScore + "is your NEW record");
+        Debug.Log(currentScore + " is your NEW record");
         YandexGame.NewLeaderboardScores(MainLBName, currentScore);
     }
 
