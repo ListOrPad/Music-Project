@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource Source { get; set; }
 
     [DllImport("__Internal")]
-    public static extern void InitializeAudioSystem(string path);
+    public static extern void InitializeAudioSystem(IntPtr data, int length);
 
     [DllImport("__Internal")]
     public static extern void ControlAudio(string action);
@@ -75,5 +76,21 @@ public class SoundManager : MonoBehaviour
         }
         
     }
+
+    public static void InitializeWebGLAudio(AudioClip clip)
+    {
+        float[] samples = new float[clip.samples * clip.channels];
+        clip.GetData(samples, 0);
+
+        byte[] byteData = new byte[samples.Length * 4];
+        Buffer.BlockCopy(samples, 0, byteData, 0, byteData.Length);
+
+        IntPtr ptr = Marshal.AllocHGlobal(byteData.Length);
+        Marshal.Copy(byteData, 0, ptr, byteData.Length);
+
+        InitializeAudioSystem(ptr, byteData.Length);
+        Marshal.FreeHGlobal(ptr);
+    }
+
 
 }

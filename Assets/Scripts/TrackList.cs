@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,6 @@ using UnityEngine.UI;
 public class TrackList : MonoBehaviour
 {
     [SerializeField] private List<Track> trackObjects;
-    [SerializeField] public List<string> webGLTrackPaths;
     public static Track CurrentTrack { get; private set; }
     public static bool CurrentTrackChanged { get; set; }
     public static bool TrackFinished { get; set; }
@@ -104,22 +104,20 @@ public class TrackList : MonoBehaviour
     /// </summary>
     public void SetTrack(int chosenTrackID)
     {
-        for (int i = 0; i <= trackObjects.Count; i++)
+        if (chosenTrackID < 0 || chosenTrackID >= trackObjects.Count)
         {
-            if (chosenTrackID == i)
-            {
-#if UNITY_WEBGL && !UNITY_EDITOR
-                SoundManager.InitializeAudioSystem(trackObjects[i].WebGLPath);
-#else
-                CurrentTrack = trackObjects[i];
-#endif
-                return;
-            }
+            Debug.LogError($"Invalid track ID: {chosenTrackID}");
+            return;
         }
 
-        Debug.LogError("Error finding a track");
-    }
+        var track = trackObjects[chosenTrackID];
+        CurrentTrack = track;
 
+#if UNITY_WEBGL && !UNITY_EDITOR
+    SoundManager.InitializeWebGLAudio(track.Clip);
+#endif
+    }
+    
     /// <summary>
     /// change elements in playmode
     /// </summary>

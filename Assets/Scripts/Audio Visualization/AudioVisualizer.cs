@@ -11,8 +11,6 @@ public class AudioVisualizer : MonoBehaviour
     private float[] bufferDecrease = new float[8];
 
     // Import Javascript functions
-    [DllImport("__Internal")]
-    private static extern void InitializeAudioAnalyzer();
 
     [DllImport("__Internal")]
     private static extern string GetSpectrumData();
@@ -20,9 +18,6 @@ public class AudioVisualizer : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-#if UNITY_WEBGL && !UNITY_EDITOR
-        InitializeAudioAnalyzer();
-#endif
         StartCoroutine(UpdateVisualization());
     }
 

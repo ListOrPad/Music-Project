@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -38,13 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -67,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 0
@@ -540,7 +536,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 7c6a9215fad6e3d4d878638743d96127, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/Vitya.mp3
   vote:
   - {fileID: 1578827561}
   - {fileID: 1710762755}
@@ -794,15 +789,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1270,7 +1267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: e3a478f9dc7fc15419f3456be9365641, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/Kapibara.mp3
   vote:
   - {fileID: 1542882496}
   - {fileID: 1082282373}
@@ -1378,7 +1374,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0025024414}
+  m_AnchoredPosition: {x: 0, y: 0.0024414062}
   m_SizeDelta: {x: -14.996, y: 0.005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &263446983
@@ -1499,7 +1495,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 8bf374115fa033240a3d5b812dd4db59, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/GetBack.mp3
   vote:
   - {fileID: 550325131}
   - {fileID: 542036850}
@@ -1621,7 +1616,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 102e7c51e5f4ead47a4f6ca6dea50adf, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/BossBitch.mp3
   vote:
   - {fileID: 2009189449}
   - {fileID: 314034738}
@@ -2342,7 +2336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 143f08535835f584ebe94dd1e517a5a2, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/AllStar.mp3
   vote:
   - {fileID: 1064175079}
   - {fileID: 1725821315}
@@ -2446,15 +2439,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -2516,7 +2511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.90200007, y: 0.8496297}
   m_AnchorMax: {x: 0.97300005, y: 0.9794815}
-  m_AnchoredPosition: {x: -1, y: 1.999939}
+  m_AnchoredPosition: {x: -1, y: 2}
   m_SizeDelta: {x: 11.756836, y: 11.625122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &353959101
@@ -3006,15 +3001,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -3080,7 +3077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.64973533, y: 0.012}
   m_AnchorMax: {x: 0.98244435, y: 0.0534075}
-  m_AnchoredPosition: {x: -5.0928955, y: 57.5}
+  m_AnchoredPosition: {x: -5.0927734, y: 57.5}
   m_SizeDelta: {x: 13.449585, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &438569633
@@ -3459,7 +3456,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &491314976
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3473,6 +3470,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -3627,7 +3625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 21.001099}
+  m_AnchoredPosition: {x: 0, y: 21.000977}
   m_SizeDelta: {x: -22.364, y: 5.285}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &495404251
@@ -3796,7 +3794,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &507741983
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3810,6 +3808,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -3887,7 +3886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23717503, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.21774292, y: 0}
+  m_AnchoredPosition: {x: -0.21777344, y: 0}
   m_SizeDelta: {x: 0.43527, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519089769
@@ -3953,15 +3952,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -4300,7 +4301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.20042503, y: 1}
-  m_AnchoredPosition: {x: 0.59954834, y: 0}
+  m_AnchoredPosition: {x: 0.5996094, y: 0}
   m_SizeDelta: {x: 2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552072395
@@ -4516,15 +4517,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -4667,7 +4670,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 368ad80dbec1e1c4693eddb67fcc651a, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/DanceWithHands.mp3
   vote:
   - {fileID: 1074760175}
   - {fileID: 673406654}
@@ -5183,7 +5185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.53274685, y: 0.2825185}
   m_AnchorMax: {x: 0.80600005, y: 0.7857038}
-  m_AnchoredPosition: {x: 7.499878, y: -4.5}
+  m_AnchoredPosition: {x: 7.499756, y: -4.5}
   m_SizeDelta: {x: -426, y: -444}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &604220524
@@ -5246,7 +5248,7 @@ MonoBehaviour:
   <ClickerPic>k__BackingField: {fileID: 1745071572}
 --- !u!95 &604220526
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5260,6 +5262,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -5373,7 +5376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.8804445}
   m_AnchorMax: {x: 0.10021105, y: 0.9665186}
-  m_AnchoredPosition: {x: 6.26001, y: -1.6445312}
+  m_AnchoredPosition: {x: 6.2597656, y: -1.6445312}
   m_SizeDelta: {x: 11.508301, y: 16.009308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &615075446
@@ -5768,7 +5771,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.08442055, y: 0.10778976}
   m_AnchorMax: {x: 0.6294727, y: 0.28678977}
-  m_AnchoredPosition: {x: 31, y: 2.4996948}
+  m_AnchoredPosition: {x: 31, y: 2.4997559}
   m_SizeDelta: {x: -33.787308, y: 23.57312}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &650375249
@@ -6443,7 +6446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.044556, y: 0}
+  m_AnchoredPosition: {x: -9.046875, y: 0}
   m_SizeDelta: {x: 18.103, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &708490777
@@ -6770,7 +6773,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: be423924eece83740b4816029a8ed9d2, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/NadoRadovatsa.mp3
   vote:
   - {fileID: 841342428}
   - {fileID: 1429042776}
@@ -6809,7 +6811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.04210492, y: 0.34878445}
   m_AnchorMax: {x: 0.46600002, y: 0.62347704}
-  m_AnchoredPosition: {x: -0.9999237, y: 0.5}
+  m_AnchoredPosition: {x: -0.9998779, y: 0.5}
   m_SizeDelta: {x: 0.7838974, y: 49.235}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &718999760
@@ -7035,7 +7037,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 55fc7713f8c3ca041ba3f3a436ee13a1, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/SonneRammstein.mp3
   vote:
   - {fileID: 133332796}
   - {fileID: 1151621780}
@@ -7793,7 +7794,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 0e78bf092251f5d40b02f598ea02a1fc, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/OhWhoIsShe.mp3
   vote:
   - {fileID: 1370637851}
   - {fileID: 1119362440}
@@ -8058,7 +8058,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3104792, y: 0}
   m_AnchorMax: {x: 0.8035833, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15.551636}
+  m_AnchoredPosition: {x: 0, y: -15.55127}
   m_SizeDelta: {x: -10.418301, y: -0.049316406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859700118
@@ -8361,15 +8361,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -8431,7 +8433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.017563585}
   m_AnchorMax: {x: 1, y: 0.6955425}
-  m_AnchoredPosition: {x: -56.58203, y: -4.9802856}
+  m_AnchoredPosition: {x: -56.58203, y: -4.9802246}
   m_SizeDelta: {x: 113.1434, y: 13.139999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &913965859
@@ -9316,7 +9318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 8f3b59ca426768248be89c7052473450, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/StrangersSad.mp3
   vote:
   - {fileID: 1000570295}
   - {fileID: 447922961}
@@ -9420,15 +9421,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -9608,10 +9611,156 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 3876b4ebc91189b44985ccadc67b5e9e, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/Megalovania.mp3
   vote:
   - {fileID: 1604975949}
   - {fileID: 652692428}
+--- !u!1 &1043977586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043977587}
+  - component: {fileID: 1043977591}
+  - component: {fileID: 1043977590}
+  - component: {fileID: 1043977589}
+  - component: {fileID: 1043977588}
+  m_Layer: 5
+  m_Name: Initializer Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1043977587
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043977586}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1082256004}
+  m_Father: {fileID: 1403153172}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0028992, y: -0.00032043}
+  m_SizeDelta: {x: 1920.7, y: 1088.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1043977588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043977586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19ca751cac20df49a37a73480010a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioInitButton: {fileID: 1043977586}
+--- !u!114 &1043977589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043977586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1043977590}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1043977588}
+        m_TargetAssemblyTypeName: AudioInitializer, Assembly-CSharp
+        m_MethodName: OnAudioInitClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1043977590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043977586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6392157}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1043977591
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043977586}
+  m_CullTransparentMesh: 1
 --- !u!1 &1059980925
 GameObject:
   m_ObjectHideFlags: 0
@@ -9949,6 +10098,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076185100}
   m_CullTransparentMesh: 1
+--- !u!1 &1082256003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082256004}
+  - component: {fileID: 1082256006}
+  - component: {fileID: 1082256005}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1082256004
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082256003}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1043977587}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -26}
+  m_SizeDelta: {x: -1304.458, y: -875.398}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1082256005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082256003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Click
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 191
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 1
+  m_fontSizeMax: 32767
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1082256006
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082256003}
+  m_CullTransparentMesh: 1
 --- !u!1 &1082282373
 GameObject:
   m_ObjectHideFlags: 0
@@ -10064,7 +10349,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1086378774
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10078,6 +10363,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -10846,15 +11132,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -10998,7 +11286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: b1dbb75720d0ee34c85db2e64b8998ea, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/SnoopDogg.mp3
   vote:
   - {fileID: 494570853}
   - {fileID: 1441971020}
@@ -11119,7 +11406,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 374fb807ad152c7439333a7c413f209a, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/EpicSaxGuy.mp3
   vote:
   - {fileID: 1496010285}
   - {fileID: 570170022}
@@ -11335,15 +11621,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -11630,7 +11918,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 24cf335eee515f446907673d66e3968b, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/LookAtMyHorse.mp3
   vote:
   - {fileID: 974916395}
   - {fileID: 148399950}
@@ -11751,7 +12038,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 31f941c1f56ea984bab6399cc4d99e49, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/Fonk1.mp3
   vote:
   - {fileID: 940560950}
   - {fileID: 397241262}
@@ -11872,7 +12158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: d5a9ae88cfedcb04a9960730178826d3, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/Caramelldancen.mp3
   vote:
   - {fileID: 1205887581}
   - {fileID: 1076185100}
@@ -11985,7 +12270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.6468857}
   m_AnchorMax: {x: 0.72726524, y: 1}
-  m_AnchoredPosition: {x: -48.263184, y: 7.187317}
+  m_AnchoredPosition: {x: -48.263184, y: 7.187256}
   m_SizeDelta: {x: 86.52649, y: 4.024414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1287442353
@@ -12143,7 +12428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 236f5f81f35876343b1711885a234b05, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/3September.mp3
   vote:
   - {fileID: 48572066}
   - {fileID: 712691945}
@@ -12264,7 +12548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: c03806295a247f144973fb34a28ac324, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/IaZnayuTvojTelephone.mp3
   vote:
   - {fileID: 1764024389}
   - {fileID: 820529010}
@@ -12343,7 +12626,6 @@ MonoBehaviour:
   - {fileID: 1925804822}
   - {fileID: 263446988}
   - {fileID: 1968970434}
-  webGLTrackPaths: []
   voteSystem: {fileID: 597031790}
 --- !u!1 &1306841032
 GameObject:
@@ -12380,7 +12662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.596809, y: 0}
   m_AnchorMax: {x: 0.9695956, y: 0.67233175}
-  m_AnchoredPosition: {x: 0, y: -0.69155884}
+  m_AnchoredPosition: {x: 0, y: -0.6915283}
   m_SizeDelta: {x: -0.25050354, y: -0.5944977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1306841034
@@ -13179,15 +13461,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -13244,6 +13528,7 @@ RectTransform:
   m_Children:
   - {fileID: 256169851}
   - {fileID: 1525756536}
+  - {fileID: 1043977587}
   m_Father: {fileID: 706394435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13515,15 +13800,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -13659,7 +13946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.057707902, y: 0}
   m_AnchorMax: {x: 0.43164065, y: 0.67233175}
-  m_AnchoredPosition: {x: 1.5001526, y: -0.69155884}
+  m_AnchoredPosition: {x: 1.5001221, y: -0.6915283}
   m_SizeDelta: {x: -1.2505035, y: -0.5944977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435871053
@@ -14287,7 +14574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 5947c8d9f9aa1d342bb3f93be360a517, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/WhatIsLove.mp3
   vote:
   - {fileID: 1877475927}
   - {fileID: 1770730883}
@@ -14484,7 +14770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 3128798749af7564d8aa15365ea652ec, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/ColorBlue.mp3
   vote:
   - {fileID: 1947601981}
   - {fileID: 287998625}
@@ -14549,7 +14834,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.013, y: 0.37137038}
   m_AnchorMax: {x: 0.28300002, y: 0.61200005}
-  m_AnchoredPosition: {x: -4.022583, y: -6.453125}
+  m_AnchoredPosition: {x: -4.022949, y: -6.453125}
   m_SizeDelta: {x: 8.4986, y: 12.907}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1481973005
@@ -14758,7 +15043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.04210492, y: 0}
   m_AnchorMax: {x: 0.46600002, y: 0.2903074}
-  m_AnchoredPosition: {x: -0.9999237, y: 0}
+  m_AnchoredPosition: {x: -0.9998779, y: 0}
   m_SizeDelta: {x: 0.7838974, y: 44.235}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1495916034
@@ -14982,7 +15267,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1510594049
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14996,6 +15281,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -15218,7 +15504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0025024414}
+  m_AnchoredPosition: {x: 0, y: 0.0024414062}
   m_SizeDelta: {x: -0.00012207, y: 0.005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1538792183
@@ -15563,7 +15849,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: a13e8007cd531d546a66e7b4b3803c39, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/Fonk2.mp3
   vote:
   - {fileID: 2032676174}
   - {fileID: 297458276}
@@ -15685,7 +15970,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: ad9f321d3516f044f969fe7aaaf1b03d, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/Pedro.mp3
   vote:
   - {fileID: 1862368722}
   - {fileID: 200001585}
@@ -15789,15 +16073,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -16514,7 +16800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.112859294}
   m_AnchorMax: {x: 0.7625704, y: 0.4314783}
-  m_AnchoredPosition: {x: 36, y: -12.427967}
+  m_AnchoredPosition: {x: 36, y: -12.42804}
   m_SizeDelta: {x: -22.639175, y: 60.239845}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1701780086
@@ -16641,7 +16927,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.8008575, y: 5.5}
+  m_AnchoredPosition: {x: -2.8009186, y: 5.5}
   m_SizeDelta: {x: 323.65527, y: 323.9192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709089860
@@ -16887,7 +17173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: b952e1987da204844aff35a6f196c00d, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/ChipiChipi.mp3
   vote:
   - {fileID: 552685755}
   - {fileID: 697610605}
@@ -17264,7 +17549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: e939825b2b542df4594900c5b4a9bc3c, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/CheriLady.mp3
   vote:
   - {fileID: 816866618}
   - {fileID: 595175814}
@@ -17638,7 +17922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -4.999878, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1804698057
@@ -17719,7 +18003,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f52eb6fcf37281d46b92c2253f0691eb, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: f52eb6fcf37281d46b92c2253f0691eb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
@@ -18735,7 +19020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.25317383, y: 0}
+  m_AnchoredPosition: {x: 0.2529297, y: 0}
   m_SizeDelta: {x: -0.50659, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1906179636
@@ -18748,7 +19033,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &1906179637
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18762,6 +19047,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -19149,7 +19435,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: b168dc48034cdec4089452eff837d47e, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/WidePutin.mp3
   vote:
   - {fileID: 1168285785}
   - {fileID: 51942024}
@@ -19668,8 +19953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08685418a4b852b48b3bef6da079f8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Clip>k__BackingField: {fileID: 8300000, guid: 2bddcfc024ccab949b45ab3a5f2d97c9, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/Kitchen
+  <Clip>k__BackingField: {fileID: 8300000, guid: 419dc5bc44d8f4849a809dc16392b7d5, type: 3}
   vote:
   - {fileID: 309943336}
   - {fileID: 1864075905}
@@ -19978,7 +20262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: c7e3f0168a403324bac5f5f62e8a901a, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/CoffinDance.mp3
   vote:
   - {fileID: 53527768}
   - {fileID: 1983366145}
@@ -20157,15 +20440,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -20458,7 +20743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 89a1418d985a9084eb321940cc147743, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/BadGuy.mp3
   vote:
   - {fileID: 1419423043}
   - {fileID: 499348446}
@@ -20497,7 +20781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.18714815}
   m_AnchorMax: {x: 0.12560552, y: 0.8366296}
-  m_AnchoredPosition: {x: -23, y: 0}
+  m_AnchoredPosition: {x: -22.999878, y: 0}
   m_SizeDelta: {x: 0.7931595, y: -8.747299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031632376
@@ -20836,7 +21120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: c121681ad6300ac4a82480068d6502b4, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/MojeMore.mp3
   vote:
   - {fileID: 926878480}
   - {fileID: 1310919934}
@@ -21066,7 +21349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 98eb640ae033e59458ef364aa074d2a2, type: 3}
-  <WebGLPath>k__BackingField: Assets/Audio/CallMeMaybe.mp3
   vote:
   - {fileID: 1105580050}
   - {fileID: 1963073108}
