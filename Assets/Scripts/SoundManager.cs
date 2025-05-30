@@ -1,17 +1,9 @@
-using System;
-using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
     public AudioSource Source { get; set; }
-
-    [DllImport("__Internal")]
-    public static extern void InitializeAudioSystem(IntPtr data, int length);
-
-    [DllImport("__Internal")]
-    public static extern void ControlAudio(string action);
 
     private void Awake()
     {
@@ -32,19 +24,11 @@ public class SoundManager : MonoBehaviour
 
     public void ResumeTrack()
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
-        ControlAudio("play");
-#else
         Source.Play();
-#endif
     }
     public void PauseTrack()
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
-        ControlAudio("pause");
-#else
         Source.Pause();
-#endif
     }
 
     public void ResetProgress(ProgressBar progressBar)
@@ -76,21 +60,4 @@ public class SoundManager : MonoBehaviour
         }
         
     }
-
-    public static void InitializeWebGLAudio(AudioClip clip)
-    {
-        float[] samples = new float[clip.samples * clip.channels];
-        clip.GetData(samples, 0);
-
-        byte[] byteData = new byte[samples.Length * 4];
-        Buffer.BlockCopy(samples, 0, byteData, 0, byteData.Length);
-
-        IntPtr ptr = Marshal.AllocHGlobal(byteData.Length);
-        Marshal.Copy(byteData, 0, ptr, byteData.Length);
-
-        InitializeAudioSystem(ptr, byteData.Length);
-        Marshal.FreeHGlobal(ptr);
-    }
-
-
 }

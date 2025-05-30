@@ -3,7 +3,6 @@ using UnityEngine;
 public class Track : MonoBehaviour
 {
     [field: SerializeField] public AudioClip Clip { get; private set; }
-    //[field: SerializeField] public string WebGLPath { get; private set; }
 
     public bool UniqueCompleted { get; set; }
 

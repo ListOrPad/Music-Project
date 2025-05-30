@@ -89,8 +89,8 @@ public class TrackUnlockManager : MonoBehaviour
         //unlock tracks opened before
         for (int i = 0; i < rewAdTracks.Count; i++)
         {
-            bool adViewedEarlier = MySaver.Instance.adsViewed[i];
-            if (adViewedEarlier)
+            bool wasAdViewedEarlier = MySaver.Instance.adsViewed[i];
+            if (wasAdViewedEarlier)
             {
                 rewAdTracks[i].gameObject.GetComponent<Button>().interactable = true;
                 rewAdTracks[i].transform.Find("Ad Pic").gameObject.SetActive(false);

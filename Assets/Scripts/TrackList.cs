@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -112,10 +110,6 @@ public class TrackList : MonoBehaviour
 
         var track = trackObjects[chosenTrackID];
         CurrentTrack = track;
-
-#if UNITY_WEBGL && !UNITY_EDITOR
-    SoundManager.InitializeWebGLAudio(track.Clip);
-#endif
     }
     
     /// <summary>
