@@ -3,11 +3,11 @@ using UnityEngine;
 public class BookmarkManager : MonoBehaviour
 {
     [SerializeField] private Bookmark[] bookmarks;
+    [SerializeField] private float animationSpeed = 400f; // Pixels/sec
+    [SerializeField] private float visibleXPosition = 40f;
+    [SerializeField] private float hiddenXPosition = -40f;
 
-    private bool bookmarkChanged;
-    private int updateCycles = 0;
-    private const int targetUpdateCycles = 6;
-    private Vector3 extensionSpeed = new Vector3(5, 0);
+    private bool isAnimating;
 
     private void Start()
     {
@@ -25,50 +25,67 @@ public class BookmarkManager : MonoBehaviour
         }
 
         bookmarks[0].Selected = true;
-        bookmarkChanged = true;
+
+        // instantly set position(no anim)
+        foreach (var bookmark in bookmarks)
+        {
+            Vector2 targetPos = bookmark.Selected ?
+                new Vector2(visibleXPosition, bookmark.rectTransform.anchoredPosition.y) :
+                new Vector2(hiddenXPosition, bookmark.rectTransform.anchoredPosition.y);
+
+            bookmark.rectTransform.anchoredPosition = targetPos;
+        }
     }
 
     private void Update()
     {
-        if (bookmarkChanged)
+        if (!isAnimating) return;
+
+        bool animationFinished = true;
+
+        foreach (var bookmark in bookmarks)
         {
-            MoveBookmark();
-            updateCycles++;
+            // Define target pos
+            float targetX = bookmark.Selected ? visibleXPosition : hiddenXPosition;
+            Vector2 currentPos = bookmark.rectTransform.anchoredPosition;
+
+            // if reached target -- skip
+            if (Mathf.Approximately(currentPos.x, targetX)) continue;
+
+            // smooth movement
+            float direction = Mathf.Sign(targetX - currentPos.x);
+            float newX = currentPos.x + direction * animationSpeed * Time.deltaTime;
+
+            // check if over target pos
+            if ((direction > 0 && newX > targetX) || (direction < 0 && newX < targetX))
+            {
+                newX = targetX;
+            }
+
+            bookmark.rectTransform.anchoredPosition = new Vector2(newX, currentPos.y);
+
+            if (!Mathf.Approximately(newX, targetX))
+            {
+                animationFinished = false;
+            }
         }
-        if (updateCycles == targetUpdateCycles)
+
+        if (animationFinished)
         {
-            bookmarkChanged = false;
-            updateCycles = 0;
+            isAnimating = false;
         }
     }
 
     public void Select(int bookmarkID)
     {
+        if (bookmarkID < 0 || bookmarkID >= bookmarks.Length) return;
+
         foreach (var bookmark in bookmarks)
         {
             bookmark.Selected = false;
         }
 
         bookmarks[bookmarkID].Selected = true;
-        bookmarkChanged = true;
-    }
-
-
-    /// <summary>
-    ///  move logic for bookmarks on select and deselect
-    /// </summary>
-    private void MoveBookmark()
-    {
-        foreach (var bookmark in bookmarks)
-        {
-            if (bookmark.Selected && bookmark.Transform.position.x < 40)
-            {
-                bookmark.Transform.position += extensionSpeed;
-            }
-            else if (bookmark.Transform.position.x > 10)
-            {
-                bookmark.Transform.position -= extensionSpeed;
-            }
-        }
+        isAnimating = true;
     }
 }
