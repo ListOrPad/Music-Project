@@ -7,6 +7,7 @@ public class Clicker : MonoBehaviour
     [field:SerializeField] public Button ClickerButton { get; private set; }
     //pic section
     [field:SerializeField] public GameObject ClickerPic { get; set; }
+    [SerializeField] private ProgressBar progressBar;
     public Sprite Pic {get; set; }
 
     private void Twitch(Game game)
@@ -37,5 +38,6 @@ public class Clicker : MonoBehaviour
             game.BgAnimation.StartAnimation();
             game.Timer = 0; //reset timer
         }
+        progressBar.StartTracking();
     }
 }

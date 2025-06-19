@@ -3,6 +3,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
+    private ProgressBar progressBar;
     public AudioSource Source { get; set; }
 
     private void Awake()
@@ -21,6 +22,10 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void Start()
+    {
+        progressBar = FindAnyObjectByType<ProgressBar>();
+    }
 
     public void ResumeTrack()
     {
@@ -29,6 +34,7 @@ public class SoundManager : MonoBehaviour
     public void PauseTrack()
     {
         Source.Pause();
+        progressBar.PauseTracking();
     }
 
     public void ResetProgress(ProgressBar progressBar)

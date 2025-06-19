@@ -32,15 +32,14 @@ public class Game : MonoBehaviour
     private void Update()
     {
         Timer += Time.deltaTime;
-
-        if(AudSource.isPlaying)
-        {
-            ProgressBar.UpdateProgress(AudSource);
-        }
+        
+        ProgressBar.UpdateProgress(AudSource);
 
         if (TrackList.CurrentTrackChanged)
         {
             UnlockBookmarks();
+            ProgressBar.ResetProgress();
+
             TrackList.CurrentTrackChanged = false;
         }
 
