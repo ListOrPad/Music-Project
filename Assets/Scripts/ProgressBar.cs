@@ -9,7 +9,6 @@ public class ProgressBar : MonoBehaviour
     [field: SerializeField] public TextMeshProUGUI progressText { get; private set; }
 
     private float accumulatedTime = 0f;
-    private float lastUpdateTime = 0f;
     private bool isPlaying = false;
 
     private void Start()
@@ -29,11 +28,7 @@ public class ProgressBar : MonoBehaviour
     public void UpdateProgress(AudioSource audioSource)
     {
         if (audioSource.clip == null) return;
-        if (!isPlaying)
-        {
-            Debug.Log("Astanavis");
-            return;
-        }
+        if (!isPlaying) return;
 
         accumulatedTime += Time.unscaledDeltaTime * audioSource.pitch;
 
@@ -41,6 +36,10 @@ public class ProgressBar : MonoBehaviour
 
         ProgressSlider.value = progress;
         progressText.text = $"{(int)(progress * 100)}%";
+        if (ProgressSlider.value > 0.996)
+        {
+            progressText.text = "100%";
+        }
     }
     public void ResetProgress()
     {
@@ -48,10 +47,6 @@ public class ProgressBar : MonoBehaviour
         ProgressSlider.value = 0;
         progressText.text = "0%";
 
-        if (isPlaying)
-        {
-            lastUpdateTime = Time.time;
-        }
         isPlaying = false;
     }
 }

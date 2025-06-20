@@ -1,10 +1,10 @@
 {
-  "idSave": 2896,
+  "idSave": 3177,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Score": 32,
-  "UniqueCount": 7,
+  "Score": 36,
+  "UniqueCount": 9,
   "UniquesCompleted": [
     true,
     true,
@@ -17,7 +17,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false,
     false,
     false,
@@ -33,7 +33,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false,
     false
   ],
@@ -49,7 +49,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false,
     false,
     false,
@@ -81,7 +81,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false,
     false,
     false,
@@ -106,7 +106,7 @@
     false,
     false,
     true,
-    false,
+    true,
     false
   ]
 }

@@ -20,6 +20,7 @@ public class Localization : MonoBehaviour
         autoText.font = regularFont;
 
         CurrentLang = YandexGame.lang;
+        TranslateText(); //to pass moderation language issue(delete the comment later, after check)
 
         foreach (var button in ChangeLangButtons)
         {

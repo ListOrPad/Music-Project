@@ -17,6 +17,7 @@ public class TrackUnlockManager : MonoBehaviour
     [SerializeField] private Track thirtyfiveStarsTrack;
     [SerializeField] private Track fiftyStarsTrack;
     [SerializeField] private List<Track> rewAdTracks = new List<Track>(6);
+    //private List<Track> openableTracks;
 
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI halfUniquesText;
