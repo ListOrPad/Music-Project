@@ -7,9 +7,14 @@ public class Game : MonoBehaviour
     [field:SerializeField] public ProgressBar ProgressBar { get; set; }
     [field:SerializeField] public BackgroundAnimation BgAnimation { get; set; }
     [field:SerializeField] public TrackList TrackListGeneral { get; set; }
-    
+
+    [Header("Timers")]
     public float Timer { get; set; }
     [SerializeField] private float idleTime = 1f;   // time before pause
+    private const float timeToReset = 3f; //time before reset
+    public bool IsTimerRunning { get; set; }
+
+    [Space(15)]
 
     [SerializeField] private Canvas gameProcessCanvas;
     [field: SerializeField] public Animator Anim { get; set; }
@@ -31,7 +36,8 @@ public class Game : MonoBehaviour
 
     private void Update()
     {
-        Timer += Time.deltaTime;
+        if(IsTimerRunning)
+            Timer += Time.deltaTime;
         
         ProgressBar.UpdateProgress(AudSource);
 
@@ -48,6 +54,11 @@ public class Game : MonoBehaviour
         {
             SoundManager.Instance.PauseTrack();
             BgAnimation.PauseAnimation();
+        }
+
+        if (Timer >= timeToReset)
+        {
+            ResetTrackProgress();
         }
 
         //autoplay
@@ -107,5 +118,15 @@ public class Game : MonoBehaviour
         {
             ad.AdLock.gameObject.SetActive(false);
         }
+    }
+
+    private void ResetTrackProgress()
+    {
+        AudSource.time = 0f;
+        AudSource.Stop();
+        ProgressBar.ResetProgress();
+        SoundManager.Instance.PlayResetSound();
+        Timer = 0f;
+        IsTimerRunning = false;
     }
 }

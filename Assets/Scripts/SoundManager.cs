@@ -5,6 +5,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance;
     private ProgressBar progressBar;
     public AudioSource Source { get; set; }
+    [SerializeField] private AudioClip resetSound;
 
     private void Awake()
     {
@@ -43,6 +44,11 @@ public class SoundManager : MonoBehaviour
         progressBar.progressText.text = "0%";
         Source.clip = null;
         Source.clip = TrackList.CurrentTrack.Clip;
+    }
+
+    public void PlayResetSound()
+    {
+        Source.PlayOneShot(resetSound);
     }
 
     public void ChangeSpeed(int speed)
