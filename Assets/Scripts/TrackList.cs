@@ -10,6 +10,7 @@ public class TrackList : MonoBehaviour
     public static bool TrackFinished { get; set; }
 
     [SerializeField] private VoteSystem voteSystem;
+    [SerializeField] private ProgressBar progressBar;
 
     private void Start()
     {
@@ -124,9 +125,12 @@ public class TrackList : MonoBehaviour
         Image pic = picTransform.GetComponent<Image>();
         clicker.Pic = pic.sprite; //finally set pic
         clicker.ClickerPic.GetComponent<Image>().sprite = clicker.Pic;
+
         //set current track to source clip
         AudioSource source = GameObject.Find("SoundManager").GetComponent<AudioSource>();
         source.clip = CurrentTrack.Clip;
 
+        //opened earlier stars show up
+        progressBar.OpenStars();
     }
 }

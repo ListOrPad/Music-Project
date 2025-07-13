@@ -515,6 +515,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &50211655
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -536,6 +548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 7c6a9215fad6e3d4d878638743d96127, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1578827561}
   - {fileID: 1710762755}
@@ -899,6 +912,81 @@ RectTransform:
   m_AnchoredPosition: {x: -5.999893, y: 2.0000153}
   m_SizeDelta: {x: 10, y: 14}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!1 &96273520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96273521}
+  - component: {fileID: 96273523}
+  - component: {fileID: 96273522}
+  m_Layer: 5
+  m_Name: Star 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &96273521
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96273520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314444839}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 211.4, y: -0.0000456}
+  m_SizeDelta: {x: 215.934, y: 215.934}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &96273522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96273520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 50b43a521270f8c42ba3a69524b428b2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &96273523
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96273520}
+  m_CullTransparentMesh: 1
 --- !u!1 &121606197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,6 +1481,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &239658624
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1414,6 +1514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: e3a478f9dc7fc15419f3456be9365641, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1542882496}
   - {fileID: 1082282373}
@@ -1658,6 +1759,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &263446987
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1679,6 +1792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 8bf374115fa033240a3d5b812dd4db59, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 550325131}
   - {fileID: 542036850}
@@ -1779,6 +1893,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &271518025
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1800,6 +1926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 102e7c51e5f4ead47a4f6ca6dea50adf, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 2009189449}
   - {fileID: 314034738}
@@ -2365,6 +2492,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314034738}
   m_CullTransparentMesh: 1
+--- !u!1 &314444838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314444839}
+  m_Layer: 5
+  m_Name: Stars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &314444839
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314444838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1038496337}
+  - {fileID: 96273521}
+  - {fileID: 1017131870}
+  m_Father: {fileID: 649785043}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 8.2284, y: 0}
+  m_SizeDelta: {x: 1411.4, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &323253604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,6 +2627,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &323253608
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2483,6 +2660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 143f08535835f584ebe94dd1e517a5a2, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1064175079}
   - {fileID: 1725821315}
@@ -2761,6 +2939,7 @@ MonoBehaviour:
   bookmarkManager: {fileID: 2031632376}
   ad: {fileID: 597031789}
   voteSystem: {fileID: 597031790}
+  progressBar: {fileID: 649785045}
 --- !u!1 &360622075
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,6 +4863,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &558143692
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4705,6 +4896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 368ad80dbec1e1c4693eddb67fcc651a, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1074760175}
   - {fileID: 673406654}
@@ -5672,6 +5864,7 @@ RectTransform:
   - {fileID: 1458036222}
   - {fileID: 1783281082}
   - {fileID: 634043640}
+  - {fileID: 314444839}
   m_Father: {fileID: 256169851}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11522566, y: 0.8804445}
@@ -5744,6 +5937,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ProgressSlider>k__BackingField: {fileID: 649785044}
   <progressText>k__BackingField: {fileID: 88152804}
+  <StarImages>k__BackingField:
+  - {fileID: 1038496338}
+  - {fileID: 96273522}
+  - {fileID: 1017131871}
+  scoreObj: {fileID: 218701889}
 --- !u!1 &650111677
 GameObject:
   m_ObjectHideFlags: 0
@@ -6688,6 +6886,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &718051076
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6709,6 +6919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: ad9f321d3516f044f969fe7aaaf1b03d, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 841342428}
   - {fileID: 1429042776}
@@ -6952,6 +7163,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &730179676
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6973,6 +7196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 55fc7713f8c3ca041ba3f3a436ee13a1, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 133332796}
   - {fileID: 1151621780}
@@ -7781,6 +8005,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &826712653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7802,6 +8038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 0e78bf092251f5d40b02f598ea02a1fc, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1370637851}
   - {fileID: 1119362440}
@@ -9305,6 +9542,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1008911061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9326,6 +9575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 8f3b59ca426768248be89c7052473450, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1000570295}
   - {fileID: 447922961}
@@ -9465,6 +9715,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009868386}
   m_CullTransparentMesh: 1
+--- !u!1 &1017131869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017131870}
+  - component: {fileID: 1017131872}
+  - component: {fileID: 1017131871}
+  m_Layer: 5
+  m_Name: Star 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1017131870
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017131869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314444839}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 683, y: 0}
+  m_SizeDelta: {x: 215.934, y: 215.934}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1017131871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017131869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 50b43a521270f8c42ba3a69524b428b2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1017131872
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017131869}
+  m_CullTransparentMesh: 1
 --- !u!1 &1023921793
 GameObject:
   m_ObjectHideFlags: 0
@@ -9598,6 +9923,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1037923782
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9619,9 +9956,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 3876b4ebc91189b44985ccadc67b5e9e, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1604975949}
   - {fileID: 652692428}
+--- !u!1 &1038496336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1038496337}
+  - component: {fileID: 1038496339}
+  - component: {fileID: 1038496338}
+  m_Layer: 5
+  m_Name: Star 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1038496337
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038496336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314444839}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -253.93, y: -0.0000064373}
+  m_SizeDelta: {x: 215.934, y: 215.934}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1038496338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038496336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 50b43a521270f8c42ba3a69524b428b2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1038496339
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038496336}
+  m_CullTransparentMesh: 1
 --- !u!1 &1059980925
 GameObject:
   m_ObjectHideFlags: 0
@@ -10927,6 +11340,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1195658255
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10948,6 +11373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 65047fc11fd9cab49a08996a6cf1b8fa, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 494570853}
   - {fileID: 1441971020}
@@ -11055,6 +11481,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1201540486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11068,6 +11506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 374fb807ad152c7439333a7c413f209a, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1496010285}
   - {fileID: 570170022}
@@ -11559,6 +11998,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1220221165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11580,6 +12031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 24cf335eee515f446907673d66e3968b, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 974916395}
   - {fileID: 148399950}
@@ -11679,6 +12131,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1255846769
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11700,6 +12164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 31f941c1f56ea984bab6399cc4d99e49, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 940560950}
   - {fileID: 397241262}
@@ -11799,6 +12264,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1269897731
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11820,6 +12297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: d5a9ae88cfedcb04a9960730178826d3, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1205887581}
   - {fileID: 1076185100}
@@ -12069,6 +12547,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1291631277
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12090,6 +12580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 236f5f81f35876343b1711885a234b05, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 48572066}
   - {fileID: 712691945}
@@ -12189,6 +12680,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1295095082
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12210,6 +12713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: c03806295a247f144973fb34a28ac324, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1764024389}
   - {fileID: 820529010}
@@ -12289,6 +12793,7 @@ MonoBehaviour:
   - {fileID: 263446988}
   - {fileID: 1968970434}
   voteSystem: {fileID: 597031790}
+  progressBar: {fileID: 649785045}
 --- !u!1 &1306841032
 GameObject:
   m_ObjectHideFlags: 0
@@ -14213,6 +14718,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1456867204
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14234,6 +14751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 5947c8d9f9aa1d342bb3f93be360a517, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1877475927}
   - {fileID: 1770730883}
@@ -14409,6 +14927,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1465894160
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14430,6 +14960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 3128798749af7564d8aa15365ea652ec, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1947601981}
   - {fileID: 287998625}
@@ -15498,6 +16029,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1551873744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15519,6 +16062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: a13e8007cd531d546a66e7b4b3803c39, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 2032676174}
   - {fileID: 297458276}
@@ -15619,6 +16163,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1568997698
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15640,6 +16196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: be9fe908c5ed7ca4a9280801325e9022, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1862368722}
   - {fileID: 200001585}
@@ -16871,6 +17428,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1717228918
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16892,6 +17461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: b952e1987da204844aff35a6f196c00d, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 552685755}
   - {fileID: 697610605}
@@ -17247,6 +17817,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1743625626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17268,6 +17850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: e939825b2b542df4594900c5b4a9bc3c, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 816866618}
   - {fileID: 595175814}
@@ -17713,6 +18296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetSound: {fileID: 8300000, guid: 42b8fff7a71613c468b1d6982b6ede86, type: 3}
+  thresholdSound: {fileID: 8300000, guid: d060f9094cdc17948a89c764f4f216e0, type: 3}
 --- !u!82 &1814407927
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19107,6 +19691,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1925804821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19128,6 +19724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 40dca0a761af02e41b36d98c64b0d00e, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1168285785}
   - {fileID: 51942024}
@@ -19626,6 +20223,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1968970433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19647,6 +20256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 419dc5bc44d8f4849a809dc16392b7d5, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 309943336}
   - {fileID: 1864075905}
@@ -19934,6 +20544,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2003508304
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19955,6 +20577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: c7e3f0168a403324bac5f5f62e8a901a, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 53527768}
   - {fileID: 1983366145}
@@ -20415,6 +21038,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2029281184
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20436,6 +21071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 89a1418d985a9084eb321940cc147743, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1419423043}
   - {fileID: 499348446}
@@ -20743,6 +21379,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2073611075
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20764,6 +21412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: c121681ad6300ac4a82480068d6502b4, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 926878480}
   - {fileID: 1310919934}
@@ -20976,6 +21625,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 649785045}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: OpenStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2102338337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20997,6 +21658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Clip>k__BackingField: {fileID: 8300000, guid: 98eb640ae033e59458ef364aa074d2a2, type: 3}
+  starsOpenedEarlier: 000000
   vote:
   - {fileID: 1105580050}
   - {fileID: 1963073108}

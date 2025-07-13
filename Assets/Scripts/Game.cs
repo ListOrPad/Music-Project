@@ -19,7 +19,7 @@ public class Game : MonoBehaviour
     [SerializeField] private Canvas gameProcessCanvas;
     [field: SerializeField] public Animator Anim { get; set; }
     [field: SerializeField] public Clicker clicker { get; set; }
-    [SerializeField] private Score scoreObj;
+    [SerializeField] public Score scoreObj;
     private Advertisment ad;
     public static int ClipSpeed { get; set; }
 
@@ -77,15 +77,16 @@ public class Game : MonoBehaviour
                 TrackList.TrackFinished = true;
             }
 
-            BlockPlaying();
-
-            if (!Score.ScoreChanged)
+            //If score hadn't changed before
+            if (!Score.WasScoreChanged)
             {
-                scoreObj.AddScore(TrackList.CurrentTrack);
+                scoreObj.AddUniqueScore();
                 scoreObj.WriteScoreText();
-                Score.ScoreChanged = true;
+                Score.WasScoreChanged = true;
             }
 
+            BlockPlaying();
+            
             //make voter appear
             gameObject.GetComponent<VoteSystem>().Appear();
         }

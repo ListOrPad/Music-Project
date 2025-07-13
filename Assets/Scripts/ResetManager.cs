@@ -10,6 +10,7 @@ public class ResetManager : MonoBehaviour
     [SerializeField] private BookmarkManager bookmarkManager;
     [SerializeField] private Advertisment ad;
     [SerializeField] private VoteSystem voteSystem;
+    [SerializeField] private ProgressBar progressBar;
 
     private void Start()
     {
@@ -23,9 +24,10 @@ public class ResetManager : MonoBehaviour
     private void ResetGame()
     {
         //reset
-        Score.ScoreChanged = false;
+        Score.WasScoreChanged = false;
         TrackList.TrackFinished = false;
         game.SwitchCanvas();
+        game.scoreObj.AddUniqueScore();
         ad.AdLock.SetActive(true);
         Game.ClipSpeed = 0;
         soundManager.PauseTrack();
@@ -33,5 +35,23 @@ public class ResetManager : MonoBehaviour
         soundManager.ResetProgress(game.ProgressBar);
         bookmarkManager.ResetToFirst();
         game.clicker.ClickerButton.onClick.AddListener(() => game.clicker.Click(game));
+
+        foreach (var image in progressBar.StarImages)
+        {
+            image.color = new Color32(0, 0, 0, 255);
+        }
+
+
+        //analyses opened stars on reset
+        for (int i = 0; i < ProgressBar.wereStarsOpened.Count; i++)
+        {
+            if (!TrackList.CurrentTrack.starsOpenedEarlier[i]) //if star was opened earlier we don't set it true
+                TrackList.CurrentTrack.starsOpenedEarlier[i] = ProgressBar.wereStarsOpened[i];
+        }
+
+        for (int i = 0; i <= 2; i++)
+        {
+            ProgressBar.wereStarsOpened[i] = false;
+        }
     }
 }

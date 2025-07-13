@@ -6,6 +6,7 @@ public class SoundManager : MonoBehaviour
     private ProgressBar progressBar;
     public AudioSource Source { get; set; }
     [SerializeField] private AudioClip resetSound;
+    [SerializeField] private AudioClip thresholdSound;
 
     private void Awake()
     {
@@ -26,6 +27,13 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         progressBar = FindAnyObjectByType<ProgressBar>();
+        progressBar.ThresholdReached += PlayThresholdSound;
+
+    }
+
+    private void PlayThresholdSound()
+    {
+        Source.PlayOneShot(thresholdSound);
     }
 
     public void ResumeTrack()

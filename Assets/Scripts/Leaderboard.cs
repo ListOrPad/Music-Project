@@ -17,7 +17,7 @@ public class Leaderboard : MonoBehaviour
 
     private void Update()
     {
-        if (Score.ScoreChanged)
+        if (Score.WasScoreChanged)
         {
             currentScore = MySaver.Instance.scoreCount;
         }

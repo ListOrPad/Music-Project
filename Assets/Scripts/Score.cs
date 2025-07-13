@@ -1,12 +1,13 @@
 using UnityEngine;
 using TMPro;
+using NUnit.Framework;
 
 public class Score : MonoBehaviour
 {
     public int ScoreCount { get; private set; }
     public int UniqueCount { get; private set; }
 
-    public static bool ScoreChanged { get; set; }
+    public static bool WasScoreChanged { get; set; }
 
     [SerializeField] private TextMeshProUGUI ScoreText;
     [SerializeField] private TextMeshProUGUI UniqueText;
@@ -25,15 +26,27 @@ public class Score : MonoBehaviour
         UniqueText.text = $"{UniqueCount}/30";
     }
 
-    public void AddScore(Track currentTrack)
+    public void AddScore()
     {
-        if (!currentTrack.UniqueCompleted)
+        for (int i = 0; i < ProgressBar.wereStarsOpened.Count; i++)
         {
-            UniqueCount += 1;
-            MySaver.Instance.uniqueCount += 1;
-            currentTrack.UniqueCompleted = true;
+            // Добавляем очки только за новые звёзды
+            if (ProgressBar.wereStarsOpened[i] && !TrackList.CurrentTrack.starsOpenedEarlier[i])
+            {
+                ScoreCount++;
+                MySaver.Instance.scoreCount++;
+                TrackList.CurrentTrack.starsOpenedEarlier[i] = true; // Помечаем как открытую
+            }
         }
-        ScoreCount += 1;
-        MySaver.Instance.scoreCount += 1;
+    }
+
+    public void AddUniqueScore()
+    {
+        if (!TrackList.CurrentTrack.UniqueCompleted)
+        {
+            UniqueCount++;
+            MySaver.Instance.uniqueCount++;
+            TrackList.CurrentTrack.UniqueCompleted = true;
+        }
     }
 }

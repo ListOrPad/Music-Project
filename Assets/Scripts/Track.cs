@@ -1,10 +1,13 @@
 using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class Track : MonoBehaviour
 {
     [field: SerializeField] public AudioClip Clip { get; private set; }
 
     public bool UniqueCompleted { get; set; }
+    public List<bool> starsOpenedEarlier = new List<bool>() { false, false, false };
 
     //votes
     [SerializeField] private GameObject[] vote;
