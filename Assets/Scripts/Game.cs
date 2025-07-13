@@ -76,6 +76,8 @@ public class Game : MonoBehaviour
                 BgAnimation.PlayConfetti();
                 TrackList.TrackFinished = true;
             }
+            
+            BlockPlaying();
 
             //If score hadn't changed before
             if (!Score.WasScoreChanged)
@@ -85,8 +87,6 @@ public class Game : MonoBehaviour
                 Score.WasScoreChanged = true;
             }
 
-            BlockPlaying();
-            
             //make voter appear
             gameObject.GetComponent<VoteSystem>().Appear();
         }

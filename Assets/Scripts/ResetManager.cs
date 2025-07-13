@@ -27,7 +27,6 @@ public class ResetManager : MonoBehaviour
         Score.WasScoreChanged = false;
         TrackList.TrackFinished = false;
         game.SwitchCanvas();
-        game.scoreObj.AddUniqueScore();
         ad.AdLock.SetActive(true);
         Game.ClipSpeed = 0;
         soundManager.PauseTrack();
