@@ -10,7 +10,6 @@ public class ResetManager : MonoBehaviour
     [SerializeField] private BookmarkManager bookmarkManager;
     [SerializeField] private Advertisment ad;
     [SerializeField] private VoteSystem voteSystem;
-    [SerializeField] private ProgressBar progressBar;
     [SerializeField] private TrackList trackList;
 
     private void Start()
@@ -36,7 +35,8 @@ public class ResetManager : MonoBehaviour
         bookmarkManager.ResetToFirst();
         game.clicker.ClickerButton.onClick.AddListener(() => game.clicker.Click(game));
 
-        foreach (var image in progressBar.StarImages)
+        //reset this SESSION star colors
+        foreach (var image in game.ProgressBar.StarImages)
         {
             image.color = new Color32(0, 0, 0, 255);
         }

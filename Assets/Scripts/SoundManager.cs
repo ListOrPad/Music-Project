@@ -8,6 +8,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip resetSound;
     [SerializeField] private AudioClip thresholdSound;
 
+    private const float thresholdSoundScale = 8f;
+
     private void Awake()
     {
         Source = GetComponent<AudioSource>();
@@ -33,7 +35,7 @@ public class SoundManager : MonoBehaviour
 
     private void PlayThresholdSound()
     {
-        Source.PlayOneShot(thresholdSound);
+        Source.PlayOneShot(thresholdSound, thresholdSoundScale);
     }
 
     public void ResumeTrack()

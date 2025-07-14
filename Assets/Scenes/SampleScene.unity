@@ -2939,7 +2939,6 @@ MonoBehaviour:
   bookmarkManager: {fileID: 2031632376}
   ad: {fileID: 597031789}
   voteSystem: {fileID: 597031790}
-  progressBar: {fileID: 649785045}
   trackList: {fileID: 1301708573}
 --- !u!1 &360622075
 GameObject:
