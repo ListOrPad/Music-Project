@@ -1,13 +1,16 @@
 {
-  "idSave": 36,
+  "idSave": 57,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Score": 9,
+  "Score": 10,
   "UniqueCount": 2,
   "UniquesCompleted": [
     false,
     false,
+    false,
+    false,
+    false,
     true,
     false,
     false,
@@ -15,9 +18,6 @@
     false,
     false,
     true,
-    false,
-    false,
-    false,
     false,
     false,
     false,
@@ -46,10 +46,10 @@
     false,
     false,
     false,
+    false,
+    false,
+    false,
     true,
-    false,
-    false,
-    false,
     false,
     false,
     false,
@@ -78,10 +78,10 @@
     false,
     false,
     false,
+    false,
+    false,
+    false,
     true,
-    false,
-    false,
-    false,
     false,
     false,
     false,
@@ -102,11 +102,163 @@
     false
   ],
   "AdsViewed": [
-    false,
+    true,
     false,
     false,
     false,
     false,
     false
+  ],
+  "StarsOpenedEarlierArray": [
+    [
+      true,
+      true,
+      false
+    ],
+    [
+      true,
+      true,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ]
   ]
 }

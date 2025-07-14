@@ -13,6 +13,7 @@ public class MySaver : MonoBehaviour
     public bool[] votesUp;
     public bool[] voteChanges;
     public bool[] adsViewed;
+    public bool[][] starsOpenedEarlierArray;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class MySaver : MonoBehaviour
             Instance = this;
         }
     }
+
 
     private void OnEnable()
     {
@@ -51,6 +53,7 @@ public class MySaver : MonoBehaviour
         votesUp = YandexGame.savesData.VotesUp;
         voteChanges = YandexGame.savesData.VoteChanges;
         adsViewed = YandexGame.savesData.AdsViewed;
+        starsOpenedEarlierArray = YandexGame.savesData.StarsOpenedEarlierArray;
     }
 
     /// <summary>
@@ -66,6 +69,7 @@ public class MySaver : MonoBehaviour
         YandexGame.savesData.VotesUp = votesUp;
         YandexGame.savesData.VoteChanges = voteChanges;
         YandexGame.savesData.AdsViewed = adsViewed;
+        YandexGame.savesData.StarsOpenedEarlierArray = starsOpenedEarlierArray;
         //save
         YandexGame.SaveProgress();
 

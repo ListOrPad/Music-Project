@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class TrackList : MonoBehaviour
 {
-    [SerializeField] private List<Track> trackObjects;
+    [field: SerializeField] public List<Track> TrackObjects { get; set; }
     public static Track CurrentTrack { get; private set; }
     public static bool CurrentTrackChanged { get; set; }
     public static bool TrackFinished { get; set; }
@@ -15,9 +15,10 @@ public class TrackList : MonoBehaviour
     private void Start()
     {
         //load data from MySaver
-        for (int i = 0; i < trackObjects.Count; i++)
+        for (int i = 0; i < TrackObjects.Count; i++)
         {
-            Track track = trackObjects[i];
+            Track track = TrackObjects[i];
+            track.starsOpenedEarlier = MySaver.Instance.starsOpenedEarlierArray[i];
             track.UniqueCompleted = MySaver.Instance.uniquesCompleted[i];
             track.VoteUp = MySaver.Instance.votesUp[i];
             track.VoteChanged = MySaver.Instance.voteChanges[i];
@@ -33,10 +34,10 @@ public class TrackList : MonoBehaviour
     {
         if (TrackFinished)
         {
-            for (int i = 0; i < trackObjects.Count; i++)
+            for (int i = 0; i < TrackObjects.Count; i++)
             {
                 //let uniques completed be saved in MySaver
-                Track track = trackObjects[i];
+                Track track = TrackObjects[i];
                 if (track.UniqueCompleted)
                 {
                     MySaver.Instance.uniquesCompleted[i] = track.UniqueCompleted;
@@ -48,19 +49,19 @@ public class TrackList : MonoBehaviour
 
         if (voteSystem.IsVoted)
         {
-            for (int i = 0; i < trackObjects.Count; i++)
+            for (int i = 0; i < TrackObjects.Count; i++)
             {
                 //saves votes in MySaver
-                Track track = trackObjects[i];
+                Track track = TrackObjects[i];
                 MySaver.Instance.votesUp[i] = track.VoteUp;
             }
 
             CurrentTrack.ActivateVote();
 
-            for (int i = 0; i < trackObjects.Count; i++)
+            for (int i = 0; i < TrackObjects.Count; i++)
             {
                 //marks trackObjects as voted
-                Track track = trackObjects[i];
+                Track track = TrackObjects[i];
                 MySaver.Instance.voteChanges[i] = track.VoteChanged;
             }
 
@@ -70,9 +71,9 @@ public class TrackList : MonoBehaviour
 
     public void PrepareTracklistButtons(Game game, Clicker clicker)
     {
-        for (int i = 0; i < trackObjects.Count; i++)
+        for (int i = 0; i < TrackObjects.Count; i++)
         {
-            GameObject trackObject = trackObjects[i].gameObject;
+            GameObject trackObject = TrackObjects[i].gameObject;
             Button button = trackObject.GetComponentInChildren<Button>();
 
             button.onClick.AddListener(game.SwitchCanvas);
@@ -82,7 +83,7 @@ public class TrackList : MonoBehaviour
 
     public void LightTrackItems()
     {
-        foreach (var trackObject in trackObjects)
+        foreach (var trackObject in TrackObjects)
         {
             Image trackImage = trackObject.GetComponentInChildren<Image>();
 
@@ -103,13 +104,13 @@ public class TrackList : MonoBehaviour
     /// </summary>
     public void SetTrack(int chosenTrackID)
     {
-        if (chosenTrackID < 0 || chosenTrackID >= trackObjects.Count)
+        if (chosenTrackID < 0 || chosenTrackID >= TrackObjects.Count)
         {
             Debug.LogError($"Invalid track ID: {chosenTrackID}");
             return;
         }
 
-        var track = trackObjects[chosenTrackID];
+        var track = TrackObjects[chosenTrackID];
         CurrentTrack = track;
     }
     

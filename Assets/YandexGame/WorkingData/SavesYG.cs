@@ -1,4 +1,7 @@
 ﻿
+using System.Linq;
+using UnityEngine;
+
 namespace YG
 {
     [System.Serializable]
@@ -10,7 +13,7 @@ namespace YG
         public string language = "ru";
         public bool promptDone;
 
-        // Ваши сохранения
+        // My saves
 
         public int Score = 0;
         public int UniqueCount = 0;
@@ -18,6 +21,8 @@ namespace YG
         public bool[] VotesUp = new bool[30];
         public bool[] VoteChanges = new bool[30];
         public bool[] AdsViewed = new bool[6];
+        public bool[][] StarsOpenedEarlierArray = Enumerable.Range(0, 30).Select(_ => new bool[3]).ToArray();
+
 
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()

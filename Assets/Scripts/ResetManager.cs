@@ -11,6 +11,7 @@ public class ResetManager : MonoBehaviour
     [SerializeField] private Advertisment ad;
     [SerializeField] private VoteSystem voteSystem;
     [SerializeField] private ProgressBar progressBar;
+    [SerializeField] private TrackList trackList;
 
     private void Start()
     {
@@ -48,9 +49,24 @@ public class ResetManager : MonoBehaviour
                 TrackList.CurrentTrack.starsOpenedEarlier[i] = ProgressBar.wereStarsOpened[i];
         }
 
+        SaveStarsState();
+
+        //resets stars, opened during session
         for (int i = 0; i <= 2; i++)
         {
             ProgressBar.wereStarsOpened[i] = false;
         }
     }
+
+    /// <summary>
+    /// Save track star states for the future
+    /// </summary>
+    public void SaveStarsState()
+    {
+        for (int i = 0; i < trackList.TrackObjects.Count; i++)
+        {
+            MySaver.Instance.starsOpenedEarlierArray[i] = trackList.TrackObjects[i].starsOpenedEarlier;
+        }
+    }
+
 }
