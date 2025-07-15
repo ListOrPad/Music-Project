@@ -9,6 +9,7 @@ public class TrackUnlockManager : MonoBehaviour
     [Header("Basic")]
     [SerializeField] private Score score;
     [SerializeField] private Advertisment advertisment;
+    [SerializeField] private ProgressBar progressBar;
 
     [Header("Tracks")]
     [SerializeField] private Track halfUniquesTrack;
@@ -34,6 +35,9 @@ public class TrackUnlockManager : MonoBehaviour
 
     private void Start()
     {
+        progressBar.ThresholdReached += Unlock;
+        progressBar.ThresholdReached += UpdateUnlockText;
+
         foreach (var rewAdTrack in rewAdTracks)
         {
             rewAdTrack.gameObject.GetComponent<Button>().interactable = false;
@@ -57,7 +61,7 @@ public class TrackUnlockManager : MonoBehaviour
             starPriceText[i].text = $"{starsCost} <sprite=0>";
         }
 
-        UpdateText();
+        UpdateUnlockText();
         Unlock();
     }
 
@@ -65,7 +69,7 @@ public class TrackUnlockManager : MonoBehaviour
     {
         if (TrackList.TrackFinished)
         {
-            UpdateText();
+            UpdateUnlockText();
             Unlock();
         }
         if(advertisment.IsWatched)
@@ -74,7 +78,7 @@ public class TrackUnlockManager : MonoBehaviour
         }
     }
 
-    private void UpdateText()
+    private void UpdateUnlockText()
     {
         halfUniquesText.text = $"{score.UniqueCount} / 10";
         maxUniquesText.text = $"{score.UniqueCount} / 20";
@@ -135,9 +139,15 @@ public class TrackUnlockManager : MonoBehaviour
         int index = 0;
         while (score.ScoreCount >= firstPrice && index < quantityOfOpenableTracks)
         {
-            starOpenedTracks[index].gameObject.GetComponent<Button>().interactable = true;
-            starPriceText[index].gameObject.SetActive(false);
+            //if actual score is higher/equal to the price of an item then we open it
+            if (score.ScoreCount >= firstPrice + index) 
+            {
+                starOpenedTracks[index].gameObject.GetComponent<Button>().interactable = true;
+                starPriceText[index].gameObject.SetActive(false);
+            }
+
             index++;
+            
         }
     }
 }
