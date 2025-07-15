@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,17 +15,22 @@ public class TrackUnlockManager : MonoBehaviour
     [SerializeField] private Track maxUniquesTrack;
     [SerializeField] private Track thirtyfiveStarsTrack;
     [SerializeField] private Track fiftyStarsTrack;
+    [SerializeField] private List<Track> starOpenedTracks = new List<Track>(quantityOfOpenableTracks); //all opened for stars tracks except for two traqcks that are 35 and 50 stars cost
     [SerializeField] private List<Track> rewAdTracks = new List<Track>(6);
-    //private List<Track> openableTracks;
 
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI halfUniquesText;
     [SerializeField] private TextMeshProUGUI maxUniquesText;
     [SerializeField] private TextMeshProUGUI thirtyfiveStarsText;
     [SerializeField] private TextMeshProUGUI fiftyStarsText;
+    [SerializeField] private List<TextMeshProUGUI> starPriceText = new List<TextMeshProUGUI>(17);
 
     [Header("Images")]
     [SerializeField] private Sprite rewAdSprite;
+
+    private const int firstPrice = 3;
+    private const int quantityOfOpenableTracks = 17;
+    private const int finalPrice = firstPrice + quantityOfOpenableTracks;
 
     private void Start()
     {
@@ -40,9 +44,18 @@ public class TrackUnlockManager : MonoBehaviour
         maxUniquesTrack.gameObject.GetComponent<Button>().interactable = false;
         thirtyfiveStarsTrack.gameObject.GetComponent<Button>().interactable = false;
         fiftyStarsTrack.gameObject.GetComponent<Button>().interactable = false;
+        foreach (var track in starOpenedTracks)
+        {
+            track.gameObject.GetComponent<Button>().interactable = false;
+        }
 
-        thirtyfiveStarsText.text = $"30 <sprite=0>";
-        fiftyStarsText.text = $"40 <sprite=0>";
+        thirtyfiveStarsText.text = $"35 <sprite=0>";
+        fiftyStarsText.text = $"50 <sprite=0>";
+        for (int i = 0; i < starOpenedTracks.Count; i++)
+        {
+            int starsCost = i + firstPrice;
+            starPriceText[i].text = $"{starsCost} <sprite=0>";
+        }
 
         UpdateText();
         Unlock();
@@ -108,15 +121,23 @@ public class TrackUnlockManager : MonoBehaviour
             maxUniquesTrack.gameObject.GetComponent<Button>().interactable = true;
             maxUniquesText.gameObject.SetActive(false);
         }
-        if (score.ScoreCount >= 30)
+        if (score.ScoreCount >= 35)
         {
             thirtyfiveStarsTrack.gameObject.GetComponent<Button>().interactable = true;
             thirtyfiveStarsText.gameObject.SetActive(false);
         }
-        if (score.ScoreCount >= 40)
+        if (score.ScoreCount >= 50)
         {
             fiftyStarsTrack.gameObject.GetComponent<Button>().interactable = true;
             fiftyStarsText.gameObject.SetActive(false);
+        }
+
+        int index = 0;
+        while (score.ScoreCount >= firstPrice && index < quantityOfOpenableTracks)
+        {
+            starOpenedTracks[index].gameObject.GetComponent<Button>().interactable = true;
+            starPriceText[index].gameObject.SetActive(false);
+            index++;
         }
     }
 }
