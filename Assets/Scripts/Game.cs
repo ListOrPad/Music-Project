@@ -61,16 +61,25 @@ public class Game : MonoBehaviour, IResettable
             clicker.Click(this);
         }
 
-        //if Track is completed(progressbar is filled)
+        OnTrackCompleted();
+
+    }
+
+    /// <summary>
+    /// if Track is completed(progressbar is filled)
+    /// </summary>
+    public void OnTrackCompleted()
+    {
         if (ProgressBar.ProgressSlider.value >= 0.996f)
         {
+            IsTimerRunning = false;
             ProgressBar.ProgressSlider.value = 1f;
             if (!TrackList.TrackFinished)
             {
                 BgAnimation.PlayConfetti();
                 TrackList.TrackFinished = true;
             }
-            
+
             BlockPlaying();
 
             //If score hadn't changed before
@@ -84,7 +93,6 @@ public class Game : MonoBehaviour, IResettable
             //make voter appear
             gameObject.GetComponent<VoteSystem>().Appear();
         }
-
     }
 
     public void SwitchCanvas()
@@ -115,7 +123,7 @@ public class Game : MonoBehaviour, IResettable
         }
     }
 
-    public void Reset()
+    public void OnBackButtonReset()
     {
         SwitchCanvas();
         ClipSpeed = 0;

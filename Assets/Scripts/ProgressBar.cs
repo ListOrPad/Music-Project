@@ -40,9 +40,6 @@ public class ProgressBar : MonoBehaviour
         {
             if (!isThresholdReached)
             {
-
-               
-
                 isThresholdReached = true;
                 ThresholdReached();
             }

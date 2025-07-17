@@ -23,6 +23,4 @@ public class TrackResetter : MonoBehaviour
         game.Timer = 0f;
         game.IsTimerRunning = false;
     }
-
-
 }

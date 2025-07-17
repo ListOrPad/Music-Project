@@ -22,7 +22,7 @@ public class ResetService : MonoBehaviour
     {
         foreach (var resettable in resettables)
         {
-            resettable.Reset();
+            resettable.OnBackButtonReset();
         }
     }
 }

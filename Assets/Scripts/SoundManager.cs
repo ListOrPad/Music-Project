@@ -8,8 +8,8 @@ public class SoundManager : MonoBehaviour, IResettable
     [SerializeField] private AudioClip resetSound;
     [SerializeField] private AudioClip thresholdSound;
 
-    private const float thresholdSoundScale = 8f;
-
+    private const float thresholdSoundScale = 8f; //make sound louder
+    
     private void Awake()
     {
         Source = GetComponent<AudioSource>();
@@ -74,7 +74,7 @@ public class SoundManager : MonoBehaviour, IResettable
         }
     }
 
-    public void Reset()
+    public void OnBackButtonReset()
     {
         PauseTrack();
         Source.pitch = 1f;

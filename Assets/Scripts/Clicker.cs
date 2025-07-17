@@ -30,8 +30,8 @@ public class Clicker : MonoBehaviour
     {
         if (!game.AudSource.isPlaying)
         {
-            SoundManager.Instance.ResumeTrack();
             game.IsTimerRunning = true;
+            SoundManager.Instance.ResumeTrack();
         }
         if (game.AudSource.isPlaying)
         {

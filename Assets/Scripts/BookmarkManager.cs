@@ -37,7 +37,7 @@ public class BookmarkManager : MonoBehaviour, IResettable
         }
     }
 
-    public void Reset()
+    public void OnBackButtonReset()
     {
         ResetToFirst();
     }

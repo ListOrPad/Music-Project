@@ -19,7 +19,7 @@ public class ResetManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Resets the game on return to tracklist
+    /// Resets the session on return to tracklist
     /// </summary>
     private void OnBackButtonClick()
     {

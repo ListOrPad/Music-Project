@@ -1,4 +1,7 @@
 public interface IResettable
 {
-    public void Reset();
+    /// <summary>
+    /// resets the session
+    /// </summary>
+    public void OnBackButtonReset();
 }
