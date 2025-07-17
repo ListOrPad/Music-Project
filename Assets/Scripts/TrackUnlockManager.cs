@@ -24,7 +24,7 @@ public class TrackUnlockManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI maxUniquesText;
     [SerializeField] private TextMeshProUGUI thirtyfiveStarsText;
     [SerializeField] private TextMeshProUGUI fiftyStarsText;
-    [SerializeField] private List<TextMeshProUGUI> starPriceText = new List<TextMeshProUGUI>(17);
+    [SerializeField] private List<TextMeshProUGUI> starPriceText = new List<TextMeshProUGUI>(quantityOfOpenableTracks);
 
     [Header("Images")]
     [SerializeField] private Sprite rewAdSprite;

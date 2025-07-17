@@ -6,34 +6,28 @@ public class ResetManager : MonoBehaviour
 {
     [SerializeField] private Button backButton;
     [SerializeField] private Game game;
-    [SerializeField] private SoundManager soundManager;
-    [SerializeField] private BookmarkManager bookmarkManager;
     [SerializeField] private Advertisment ad;
     [SerializeField] private VoteSystem voteSystem;
     [SerializeField] private TrackList trackList;
+    [SerializeField] private ResetService resetService;
+
 
     private void Start()
     {
-        backButton.onClick.AddListener(ResetGame);
+        backButton.onClick.AddListener(OnBackButtonClick);
         backButton.onClick.AddListener(YandexGame.FullscreenShow);
     }
 
     /// <summary>
     /// Resets the game on return to tracklist
     /// </summary>
-    private void ResetGame()
+    private void OnBackButtonClick()
     {
         //reset
+        resetService.ResetAll();
         Score.WasScoreChanged = false;
         TrackList.TrackFinished = false;
-        game.SwitchCanvas();
         ad.AdLock.SetActive(true);
-        Game.ClipSpeed = 0;
-        soundManager.PauseTrack();
-        SoundManager.Instance.Source.pitch = 1f;
-        soundManager.ResetProgress(game.ProgressBar);
-        bookmarkManager.ResetToFirst();
-        game.clicker.ClickerButton.onClick.AddListener(() => game.clicker.Click(game));
 
         //reset this SESSION star colors
         foreach (var image in game.ProgressBar.StarImages)
@@ -69,4 +63,5 @@ public class ResetManager : MonoBehaviour
         }
     }
 
+    
 }

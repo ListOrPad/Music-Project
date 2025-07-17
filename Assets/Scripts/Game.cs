@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Game : MonoBehaviour
+public class Game : MonoBehaviour, IResettable
 {
     [field:SerializeField] public AudioSource AudSource { get; set; }
     [field:SerializeField] public ProgressBar ProgressBar { get; set; }
@@ -11,7 +11,6 @@ public class Game : MonoBehaviour
     [Header("Timers")]
     public float Timer { get; set; }
     [SerializeField] private float idleTime = 1f;   // time before pause
-    private const float timeToReset = 3f; //time before reset
     public bool IsTimerRunning { get; set; }
 
     [Space(15)]
@@ -44,7 +43,7 @@ public class Game : MonoBehaviour
         if (TrackList.CurrentTrackChanged)
         {
             UnlockBookmarks();
-            ProgressBar.ResetProgress();
+            ProgressBar.ResetProgressBar();
 
             TrackList.CurrentTrackChanged = false;
         }
@@ -54,11 +53,6 @@ public class Game : MonoBehaviour
         {
             SoundManager.Instance.PauseTrack();
             BgAnimation.PauseAnimation();
-        }
-
-        if (Timer >= timeToReset)
-        {
-            ResetTrackProgress();
         }
 
         //autoplay
@@ -121,13 +115,10 @@ public class Game : MonoBehaviour
         }
     }
 
-    private void ResetTrackProgress()
+    public void Reset()
     {
-        AudSource.time = 0f;
-        AudSource.Stop();
-        ProgressBar.ResetProgress();
-        SoundManager.Instance.PlayResetSound();
-        Timer = 0f;
-        IsTimerRunning = false;
+        SwitchCanvas();
+        ClipSpeed = 0;
+        clicker.ClickerButton.onClick.AddListener(() => clicker.Click(this));
     }
 }

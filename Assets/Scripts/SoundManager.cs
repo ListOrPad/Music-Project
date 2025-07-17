@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : MonoBehaviour, IResettable
 {
     public static SoundManager Instance;
     private ProgressBar progressBar;
@@ -48,14 +48,6 @@ public class SoundManager : MonoBehaviour
         progressBar.PauseTracking();
     }
 
-    public void ResetProgress(ProgressBar progressBar)
-    {
-        progressBar.ProgressSlider.value = 0;
-        progressBar.progressText.text = "0%";
-        Source.clip = null;
-        Source.clip = TrackList.CurrentTrack.Clip;
-    }
-
     public void PlayResetSound()
     {
         Source.PlayOneShot(resetSound);
@@ -80,6 +72,15 @@ public class SoundManager : MonoBehaviour
         {
             Source.pitch = 3f;
         }
-        
+    }
+
+    public void Reset()
+    {
+        PauseTrack();
+        Source.pitch = 1f;
+        progressBar.ProgressSlider.value = 0;
+        progressBar.progressText.text = "0%";
+        Source.clip = null;
+        Source.clip = TrackList.CurrentTrack.Clip;
     }
 }

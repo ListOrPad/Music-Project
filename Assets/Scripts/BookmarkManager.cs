@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BookmarkManager : MonoBehaviour
+public class BookmarkManager : MonoBehaviour, IResettable
 {
     [SerializeField] private Bookmark[] bookmarks;
     [SerializeField] private float animationSpeed = 400f; // Pixels/sec
@@ -35,6 +35,11 @@ public class BookmarkManager : MonoBehaviour
 
             bookmark.rectTransform.anchoredPosition = targetPos;
         }
+    }
+
+    public void Reset()
+    {
+        ResetToFirst();
     }
 
     private void Update()

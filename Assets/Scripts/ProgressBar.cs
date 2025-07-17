@@ -79,7 +79,7 @@ public class ProgressBar : MonoBehaviour
             progressText.text = "100%";
         }
     }
-    public void ResetProgress()
+    public void ResetProgressBar()
     {
         accumulatedTime = 0f;
         ProgressSlider.value = 0;
